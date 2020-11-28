@@ -1,0 +1,9 @@
+@mixin hover-active {
+	&:hover{
+		box-shadow:3px 3px 20px $main-color;
+		border:none;
+		background-color:$main-color;
+		color: aliceblue;
+		
+	}
+}

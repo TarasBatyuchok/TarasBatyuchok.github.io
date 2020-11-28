@@ -1,0 +1,34 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import 'libs/animate.min';
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/iframe';
+*{
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+// body{
+//   overflow-x: hidden;
+// }
+.container{
+  max-width: 950px;
+  margin: 0 auto;
+}
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/title';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/feed';
+@import 'blocks/footer';
+@import 'blocks/modal' ;
+@import 'blocks/pageup';
+@import 'media/media';
+
