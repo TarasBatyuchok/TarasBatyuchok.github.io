@@ -1,0 +1,36 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+
+
+@import'base/variables';
+@import'base/mixins';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+
+
+@import'blocks/promo';
+@import'blocks/title';
+@import'blocks/button';
+@import'blocks/sidepanel';
+@import'blocks/menu';
+@import'blocks/about';
+@import'blocks/divider';
+@import'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
+@import 'blocks/media';

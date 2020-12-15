@@ -1,0 +1,32 @@
+.promo{
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/taras_main_bg.jpg') no-repeat 50%/cover;
+    padding-top:205px;
+    object-fit: cover;
+    &__title{
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__subtitle{
+        z-index: 2;
+        position:relative;
+        padding-left: 10px;
+        @include before_circle;
+    }
+    &__btns{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    &__link{
+        color: #000;
+        font-weight: bold;
+        &:hover{
+            color:#000;
+            text-decoration: none
+        }
+    }
+}
