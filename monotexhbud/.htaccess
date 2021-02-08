@@ -1,0 +1,25 @@
+
+#http  - https
+Header set Content-Security-Policy: upgrade-insecure-requests
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://monotechbud.com.ua/$1 [R,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://monotechbud.com.ua/ [R=301,L]
+
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /translate\.html\ HTTP/
+RewriteRule ^translate.html$ https://monotechbud.com.ua/ [R=301,L]
+
+
+
+
+
+

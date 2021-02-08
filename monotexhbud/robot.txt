@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /mailer/
+
+Host: https://monotechbud.com.ua/
