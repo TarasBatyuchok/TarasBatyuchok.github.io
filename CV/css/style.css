@@ -146,6 +146,7 @@ body {
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .another_wrapper{
