@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+body {
+    background-color: #A1CFE3;
+
+}
+
+.foto{
+    width: 200px;
+    border-radius: 40%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.promo {
+    font-family: 'Roboto mono';
+    width: 100%;
+    background-color: #50728B;
+
+}
+
+.promo_title {
+    padding: 10px;
+    text-align: center;
+}
+
+.promo_title h1 {
+    color: #B7C3CF;
+}
+
+.promo_title span {
+    color: #DBDDDC;
+}
+
+.sup_title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.promo_section {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social_link ul {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social_link li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.fab {
+    cursor: pointer;
+    font-size: 40px;
+    color: #B7C3CF;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 40px;
+    color: #B7C3CF;
+}
+
+
+
+
+
+.about_wrapper {
+    text-align: center;
+    font-family: 'Roboto mono';
+    color: #50728B;
+}
+
+.about_wrapper:after {
+    width: 100%;
+}
+
+.divider {
+    width: 100px;
+    height: 3px;
+    margin: 25px auto 0 auto;
+    background-color: #50728B;
+}
+
+.about_text {
+    margin-top: 30px;
+    font-size: 25px;
+}
+.skills{
+    padding-bottom: 30px;
+}
+
+
+.skills__items{
+    margin-top: 60px;
+    padding: 0 10px; 
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.skills__item{
+    margin-top: 22px;
+    border-radius: 20%;
+    border: 1px solid  #50728B;
+    padding: 30px 30px 25px 30px;
+}
+
+.title__item{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #50728B;
+    font-family: 'Roboto mono';
+}
+
+.skills__item p{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+.another__skills{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.another_wrapper{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto mono';
+    color: #50728B;
+}
+
+
+.programs h3{
+    font-family: 'Roboto mono';
+    color: #A1CFE3;
+    margin-bottom: 20px;
+    
+}
+.programs ul li{
+    line-height: 2;
+    list-style: none;
+    font-family: 'Roboto mono';
+    color: #A1CFE3;
+}
+.number{
+    text-decoration: none;
+}
+
+
+.contact{
+    background-color: #50728B;
+}
+
+
+
