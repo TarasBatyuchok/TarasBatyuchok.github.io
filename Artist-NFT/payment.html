@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- ! Изменить все "payment" на нужные данные, после чего удалить эту строку и переименовать текущий файл-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="./css/payment.min.css">
+	<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+	<title>payment</title>
+</head>
+<!-- todo При указанном значении 'y' или 'yes' у ключа 'swiper' - добавляет стили на страницу -->
+
+<body class="payment">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a class="header__logo" href="index.html">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<div class="header__action">
+						<div class="header__action-wrapper">
+							<div class="header__action-body">
+
+								<ul class="header__menu menu">
+									<li class="menu__item">
+										<a href="index.html">Main page</a>
+									</li>
+									<li class="menu__item menu__item_nft">
+										<a href="nfts.html">
+											<svg width="10" height="13" viewBox="0 0 10 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M5.00001 0.666656C3.39176 0.666656 2.08334 1.97507 2.08334 3.58332V4.74999H1.50001C0.856593 4.74999 0.333344 5.27324 0.333344 5.91666V11.1667C0.333344 11.8101 0.856593 12.3333 1.50001 12.3333H8.50001C9.14343 12.3333 9.66668 11.8101 9.66668 11.1667V5.91666C9.66668 5.27324 9.14343 4.74999 8.50001 4.74999H7.91668V3.58332C7.91668 1.97507 6.60826 0.666656 5.00001 0.666656ZM3.25001 3.58332C3.25001 2.61849 4.03518 1.83332 5.00001 1.83332C5.96484 1.83332 6.75001 2.61849 6.75001 3.58332V4.74999H3.25001V3.58332ZM8.50118 11.1667H5.58334V9.83782C5.93043 9.63541 6.16668 9.26324 6.16668 8.83332C6.16668 8.18991 5.64343 7.66666 5.00001 7.66666C4.35659 7.66666 3.83334 8.18991 3.83334 8.83332C3.83334 9.26266 4.06959 9.63541 4.41668 9.83782V11.1667H1.50001V5.91666H8.50001L8.50118 11.1667Z"
+													fill="#C8D2DC" />
+											</svg>
+											<span>NFT</span>
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="catalog.html">Pictures</a>
+									</li>
+									<li class="menu__item">
+										<a href="auction.html">Auction</a>
+									</li>
+									<li class="menu__item">
+										<a href="pricing.html">Pricing</a>
+									</li>
+									<li class="menu__item">
+										<a href="team.html">Contacts</a>
+									</li>
+									<li class="menu__item">
+										<a href="forum.html">Blog</a>
+									</li>
+								</ul>
+								<div class="header__buttons">
+									<div class="spoiler">
+										<div class="spoiler__preview">
+											<div class="spoiler__title">ENG</div>
+											<div class="spoiler__icon">
+												<i class="arrow-down"></i>
+											</div>
+										</div>
+										<div class="spoiler__wrapper">
+											<div class="spoiler__body">
+												<p>UA</p>
+												<p>JAP</p>
+											</div>
+										</div>
+									</div>
+									<div class="btn small grad-text authorization">
+
+										<a href="#">Authorization</a>
+									</div>
+									<div class="btn big grad-bg premium-acess">
+
+										<a href="#">Premium access</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__premium-btn">
+						<i class="crown"></i>
+					</div>
+					<div class="header__burger burger">
+						<div class="burger__wrapper">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="payment">
+				<div class="payment__container">
+					<div class="payment__inner">
+						<div class="popup none">
+							<div class="popup__body">
+								<h2 class="popup__title">
+									Payment success. Now tell us where to bring
+								</h2>
+								<p class="popup__subtitle">
+									Write correct country, adress, zip code
+								</p>
+								<form class="popup__form">
+
+									<div class="input">
+										<label for="input-country">Country</label>
+										<input type="text" id="input-country" placeholder="Your country">
+									</div>
+
+
+
+									<div class="input">
+										<label for="input-city">City</label>
+										<input type="text" id="input-city" placeholder="Your city">
+									</div>
+
+
+
+									<div class="input">
+										<label for="input-address">Address</label>
+										<input type="text" id="input-address" placeholder="Your address">
+									</div>
+
+
+
+									<div class="input">
+										<label for="input-zip code">Zip code</label>
+										<input type="text" id="input-zip code" placeholder="Your zip code">
+									</div>
+
+
+
+									<div class="input">
+										<label for="input-mail">Mail</label>
+										<input type="email" id="input-mail" placeholder="Your mail">
+									</div>
+
+
+									<div class="btn big grad-bg popup__confirm">
+
+										<a href="#">Send</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="payment__content">
+							<div class="tabs payment__tabs">
+
+								<div class="hello-h2">
+									<h6 class="hello-h2__label">
+										PURCHASE
+									</h6>
+									<h2 class="hello-h2__title">
+										Payment for <span>Name of NFT or art</span>
+									</h2>
+								</div>
+
+								<div class="tabs__nav">
+									<button class="tabs__nav-btn active" type="button" data-tab="#tab_1">
+										Credit card
+									</button>
+									<button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+										PayPal
+									</button>
+									<button class="tabs__nav-btn" type="button" data-tab="#tab_3">
+										Crypto
+									</button>
+								</div>
+								<div class="tabs__content">
+									<div class="tabs__item  active" id="tab_1">
+										<form class="form tabs__form">
+
+											<div class="input">
+												<label for="input-card number">Card number</label>
+												<input type="text" id="input-card number"
+													placeholder="0000 0000 0000 0000">
+											</div>
+
+
+
+
+											<div class="input-columns">
+												<div class="input">
+													<label for="input-date">Date</label>
+													<input type="text" id="input-date" placeholder="01/01">
+												</div>
+												<div class="input">
+													<label for="input-ccv">CCV</label>
+													<input type="text" id="input-ccv" placeholder="000">
+												</div>
+											</div>
+
+
+											<div class="input">
+												<label for="input-name on card">Name on card</label>
+												<input type="text" id="input-name on card" placeholder="Ivan Ivanov">
+											</div>
+
+
+											<div class="btn big grad-bg tabs__confirm">
+
+												<a href="#">Purchase</a>
+											</div>
+											<div class="confirm">
+												<input type="checkbox" name="confirm" id="confirm">
+												<label for="confirm">I agree with <a href="#">Privacy Policy</a> and <a
+														href="#">Terms of
+														use</a></label>
+												<svg class="" width="12" height="9" viewBox="0 0 12 9" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 4L4.5 7L10.5 1" stroke="white" stroke-width="2" />
+												</svg>
+
+											</div>
+										</form>
+									</div>
+
+									<div class="tabs__item" id="tab_2">
+										<p class="tabs__text">
+											To purchase item by paypal you have to send money to this email. After 5
+											minute result will sent in your mail
+										</p>
+										<div class="tabs__copy">
+											<p>artist-nft@nft.com </p>
+											<i class="copy"></i>
+										</div>
+
+										<div class="input">
+											<label for="input-email">E-mail</label>
+											<input type="email" id="input-email" placeholder="Your e-mail">
+										</div>
+
+
+										<div class="btn big grad-bg tabs__confirm">
+
+											<a href="#">Check</a>
+										</div>
+										<div class="confirm">
+											<input type="checkbox" name="confirm" id="confirm">
+											<label for="confirm">I agree with <a href="#">Privacy Policy</a> and <a
+													href="#">Terms of
+													use</a></label>
+											<svg class="" width="12" height="9" viewBox="0 0 12 9" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.5 4L4.5 7L10.5 1" stroke="white" stroke-width="2" />
+											</svg>
+
+										</div>
+									</div>
+									<div class="tabs__item" id="tab_3">
+										<p class="tabs__text">
+											To purchase item by crypto you have to send money to this wallet. After 5
+											minute result will sent in your mail
+										</p>
+										<div class="tabs__copy">
+											<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+											<i class="copy"></i>
+										</div>
+
+										<div class="input">
+											<label for="input-email">E-mail</label>
+											<input type="email" id="input-email" placeholder="Your e-mail">
+										</div>
+
+
+										<div class="btn big grad-bg tabs__confirm">
+
+											<a href="#">Check</a>
+										</div>
+										<div class="confirm">
+											<input type="checkbox" name="confirm" id="confirm">
+											<label for="confirm">I agree with <a href="#">Privacy Policy</a> and <a
+													href="#">Terms of
+													use</a></label>
+											<svg class="" width="12" height="9" viewBox="0 0 12 9" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.5 4L4.5 7L10.5 1" stroke="white" stroke-width="2" />
+											</svg>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="payment__desc">
+							<p class="payment__suptitle">
+								Name of NFT or Art placed here
+							</p>
+							<div class="payment__desc-header">
+								<p class="payment__price">
+									<span>price</span>
+									$100 322
+								</p>
+								<span class="payment__bid">
+									BID
+								</span>
+							</div>
+							<p class="payment__info">
+								DETAILED INFO
+							</p>
+							<div class="payment__size">
+								<p class="payment__details">
+									<span>36 × 27 in</span> 91.4 × 68.6 cm
+								</p>
+								<div class="payment__line"></div>
+								<p class="payment__details">
+									This work is part of a limited edition set.
+								</p>
+							</div>
+							<p class="payment__text payment__text--position">
+								Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The
+								use him without greatly can private. Increasing it unpleasant no of contrasted no
+								continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire
+								inhabiting.
+							</p>
+							<p class="payment__text">
+								If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance
+								defective.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__inner">
+					<a class="header__logo footer__logo" href="index.html">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<div class="footer__links">
+						<a class="footer__link" href="#">Privacy policy</a>
+						<a class="footer__link" href="#">Terms of use</a>
+					</div>
+					<div class="social-icons social-icons_grad">
+						<a target="_blank" href="https://www.instagram.com/">
+							<i class="instagram"></i>
+						</a>
+						<a target="_blank" href="https://twitter.com/">
+							<i class="twitter"></i>
+						</a>
+						<a target="_blank" href="https://web.telegram.org/">
+							<i class="telegram"></i>
+						</a>
+						<a target="_blank" href="https://www.pinterest.com/">
+							<i class="pinterest"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer__rights">
+					<p class="footer__copy">
+						All rights reserved &copy; 2022
+					</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/script.min.js"></script>
+	<!-- todo При указанном значении 'y' или 'yes' у ключа 'swiper' - добавляет скрипт на страницу -->
+</body>
+
+</html>

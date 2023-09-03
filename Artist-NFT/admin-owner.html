@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="./css/admin-owner.min.css">
+	<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+	<title>Profile</title>
+</head>
+
+<body class="admin admin-owner">
+	<div class="wrapper">
+		<header class="admin-header">
+			<div class="admin-header__cntr">
+				<a class="admin-header__logo" href="index.html">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+				<div class="admin-header__logout">
+					<p>Log out</p>
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M7 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7"
+							stroke="#C8D2DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M14 15L19 10L14 5" stroke="#C8D2DC" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M19 10H7" stroke="#C8D2DC" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</div>
+				<div class="header__burger admin-burger">
+					<div class="admin-burger__wrapper">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<aside class="aside">
+				<div class="aside__cnt">
+					<div class="aside__action">
+						<div class="aside__action-wrapper">
+							<div class="aside__action-body">
+								<ul class="aside__menu menu">
+
+									<li data-location="messages" class="menu__item menu__item_messages active">
+										<i class="messages"></i>
+										<p>Messages</p>
+									</li>
+
+
+									<li data-location="orders" class="menu__item menu__item_orders">
+										<i class="orders"></i>
+										<p>Orders</p>
+									</li>
+
+
+									<li data-location="nft" class="menu__item menu__item_nft">
+										<i class="nft"></i>
+										<p>NFT Orders</p>
+									</li>
+
+
+									<li data-location="workers" class="menu__item menu__item_workers">
+										<i class="workers"></i>
+										<p>Workers</p>
+									</li>
+
+
+								</ul>
+								<div class="aside__bottom">
+									<div class="aside__logout">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M7 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7"
+												stroke="#C8D2DC" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path d="M14 15L19 10L14 5" stroke="#C8D2DC" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M19 10H7" stroke="#C8D2DC" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<p>Log out</p>
+									</div>
+									<p class="aside__copy">All rights reserved © 2022</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<section class="messages active">
+				<div class="messages__cntr">
+					<div class="messages__preview">
+						<div class="chat-list-preview">
+							<h3 class="chat-list-preview__title">My chat list </h3>
+							<div class="chat-list-preview__body">
+								<div class="chat-list-preview__slider swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo premium">
+													<picture>
+														<source type='image/webp' srcset='img/photo/02.webp'>
+														<img src='img/photo/02.jpg' alt='personal photo'>
+													</picture>
+													<i class="crown"></i>
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/03.webp'>
+														<img src='img/photo/03.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Arlene McCoy</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/04.webp'>
+														<img src='img/photo/04.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Kathryn Murphy</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/05.webp'>
+														<img src='img/photo/05.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Jane Cooper</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/06.webp'>
+														<img src='img/photo/06.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Esther Howard</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/07.webp'>
+														<img src='img/photo/07.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/08.webp'>
+														<img src='img/photo/08.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/09.webp'>
+														<img src='img/photo/09.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/01.webp'>
+														<img src='img/photo/01.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/01.webp'>
+														<img src='img/photo/01.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/01.webp'>
+														<img src='img/photo/01.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivan Ivanov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="chat-list-preview__item">
+												<div class="chat-list-preview__photo ">
+													<picture>
+														<source type='image/webp' srcset='img/photo/01.webp'>
+														<img src='img/photo/01.jpg' alt='personal photo'>
+													</picture>
+
+												</div>
+												<p class="chat-list-preview__name">Ivananov</p>
+												<p class="chat-list-preview__time">10 min ago</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-list-preview__search">
+									<i class="search"></i>
+									<input type="text" placeholder="Search">
+								</div>
+							</div>
+						</div>
+						<div class="chat-list-items">
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo premium">
+									<picture>
+										<source type='image/webp' srcset='img/photo/02.webp'>
+										<img src='img/photo/02.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Darlene Robertson</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo ">
+									<picture>
+										<source type='image/webp' srcset='img/photo/07.webp'>
+										<img src='img/photo/07.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Marvin McKinney</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo ">
+									<picture>
+										<source type='image/webp' srcset='img/photo/08.webp'>
+										<img src='img/photo/08.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Eleanor Pena</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo ">
+									<picture>
+										<source type='image/webp' srcset='img/photo/09.webp'>
+										<img src='img/photo/09.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Guy Hawkins</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo ">
+									<picture>
+										<source type='image/webp' srcset='img/photo/01.webp'>
+										<img src='img/photo/01.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Albert Flores</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo ">
+									<picture>
+										<source type='image/webp' srcset='img/photo/02.webp'>
+										<img src='img/photo/02.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Dianne Russell</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+							<div class="chat-list-items__item">
+								<div class="chat-list-items__photo ">
+									<picture>
+										<source type='image/webp' srcset='img/photo/02.webp'>
+										<img src='img/photo/02.jpg' alt='personal photo'>
+									</picture>
+								</div>
+								<div class="chat-list-items__content">
+									<div class="chat-list-items__row">
+										<p class="chat-list-items__name">Wade Warren</p>
+										<p class="chat-list-items__time">10 min ago</p>
+									</div>
+									<p class="chat-list-items__message">Message that have been writed Lorem ipsum dolor
+										sit amet.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="messages__chat">
+						<div class="chat">
+							<div class="chat__top">
+								<div class="chat__title">
+									<svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M13 6L1 6" stroke="#FCFFFF" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M6.25 11.25L1 6L6.25 0.75" stroke="#FCFFFF" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<h3>Chat with Ivan Ivanov</h3>
+								</div>
+								<div class="chat__preview">
+									<div class="chat__photo">
+										<picture>
+											<source type='image/webp' srcset='img/photo/02.webp'>
+											<img src='img/photo/02.jpg' alt='personal photo'>
+										</picture>
+									</div>
+									<div class="chat__preview-text">
+										<p class="chat__name">Ivan Ivanov</p>
+										<p class="chat__was">Was online 10 min ago</p>
+									</div>
+								</div>
+							</div>
+							<div class="chat__wrapper">
+								<div class="chat__body">
+									<div class="chat__image-wrapper">
+										<div class='chat__image'>
+											<picture>
+												<source type='image/webp' srcset='img/gallery/14.webp'>
+												<img src='img/gallery/14.jpg' alt='sended image'>
+											</picture>
+										</div>
+									</div>
+									<div class="chat__message chat__message_sender">
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+									<div class="chat__separator">
+										<p>New messages</p>
+									</div>
+									<div class="chat__message chat__message_reciever">
+										<div class='chat__avatar'>
+											<picture>
+												<source type='image/webp' srcset='img/photo/02.webp'>
+												<img src='img/photo/02.jpg' alt='personal photo'>
+											</picture>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore
+											et dolore magna aliqua. Ut enim ad minim veniam</p>
+									</div>
+									<div class="chat__message chat__message_hidden chat__message_sender">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore
+											et dolore magna aliqua. Ut enim ad minim veniam</p>
+									</div>
+								</div>
+								<div class="chat__textarea">
+									<input type="text" placeholder="Enter your message here"></input>
+									<div>
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.15506 0.316017C1.05044 0.263689 0.933228 0.241774 0.816765 0.252765C0.700301 0.263757 0.589259 0.307213 0.496271 0.378191C0.403284 0.449169 0.332082 0.54482 0.290767 0.654262C0.249451 0.763705 0.23968 0.882546 0.262564 0.997267L2.01631 7.05977C2.04902 7.17275 2.11293 7.2742 2.20072 7.35248C2.2885 7.43076 2.39659 7.48268 2.51256 7.50227L9.62506 8.69352C9.96006 8.75977 9.96006 9.23977 9.62506 9.30602L2.51256 10.4973C2.39659 10.5169 2.2885 10.5688 2.20072 10.6471C2.11293 10.7253 2.04902 10.8268 2.01631 10.9398L0.262564 17.0023C0.23968 17.117 0.249451 17.2358 0.290767 17.3453C0.332082 17.4547 0.403284 17.5504 0.496271 17.6213C0.589259 17.6923 0.700301 17.7358 0.816765 17.7468C0.933228 17.7578 1.05044 17.7358 1.15506 17.6835L17.4051 9.55852C17.5087 9.50655 17.5959 9.42677 17.6568 9.3281C17.7178 9.22942 17.75 9.11574 17.75 8.99977C17.75 8.8838 17.7178 8.77012 17.6568 8.67144C17.5959 8.57276 17.5087 8.49298 17.4051 8.44102L1.15506 0.316017Z"
+												fill="url(#paint0_linear_1078_1547)" />
+											<defs>
+												<linearGradient id="paint0_linear_1078_1547" x1="1.41425" y1="7.35918"
+													x2="15.5717" y2="8.54365" gradientUnits="userSpaceOnUse">
+													<stop stop-color="#68C9FF" />
+													<stop offset="0.994746" stop-color="#D1B5FF" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="orders ">
+				<div class="orders">
+					<div class="orders__cntr">
+
+						<h3 class="orders__title">My orders</h3>
+						<div class="orders__heading">
+							<p class="orders__heading-type">Type of item</p>
+							<p class="orders__heading-color">Color</p>
+							<p class="orders__heading-email">E-mail</p>
+							<p class="orders__heading-size">Size</p>
+							<p class="orders__heading-comment">Comment</p>
+							<p class="orders__heading-address">Delivery address</p>
+							<p class="orders__heading-status">Status</p>
+							<p class="orders__heading-action">Action</p>
+						</div>
+						<div class="orders__items">
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+							<div class="orders__item">
+								<div class="orders__type">T-SHIRT</div>
+								<div class="orders__color"><span></span></div>
+								<div class="orders__email">emailofcustomer@gmail.com</div>
+								<div class="orders__size">
+									<p>Size</p>
+									<p>XL (99-99-99)</p>
+								</div>
+								<div class="orders__comment">
+									<p>Comment</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__address">
+									<p>Delivery address</p>
+									<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+									<button>Show more</button>
+								</div>
+								<div class="orders__status">
+									<p>Status</p>
+									<p>Success</p>
+								</div>
+								<div class="orders__action">Message</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="nft ">
+				<div class="nft-orders">
+					<div class="nft-orders__cntr">
+						<h3 class="nft-orders__title">My NFT orders</h3>
+						<div class="nft-orders__heading">
+							<p class="nft-orders__heading-name">Name of product</p>
+							<p class="nft-orders__heading-crypto">Crypto</p>
+							<p class="nft-orders__heading-status">Status</p>
+							<p class="nft-orders__heading-price">Price</p>
+							<p class="nft-orders__heading-date ">Date</p>
+						</div>
+						<div class="nft-orders__items">
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+							<div class="nft-orders__item">
+								<div class="nft-orders__name">
+									<div class="nft-orders__picture">
+										<div class="paint-block paint-block_blue">
+											<svg class="paint-circle paint-circle_big" width="253" height="196"
+												viewBox="0 0 253 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M284.444 167.447C284.444 254.458 213.75 325.03 126.5 325.03C39.2499 325.03 -31.4443 254.458 -31.4443 167.447C-31.4443 80.4364 39.2499 9.86429 126.5 9.86429C213.75 9.86429 284.444 80.4364 284.444 167.447Z"
+													stroke="url(#paint0_linear_44_951)" stroke-opacity="0.62"
+													stroke-width="19.5171" />
+												<defs>
+													<linearGradient id="paint0_linear_44_951" x1="126.5" y1="0.105713"
+														x2="126.5" y2="334.789" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="paint-circle paint-circle_small" width="253" height="142"
+												viewBox="0 0 253 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="126.5" cy="134.771" r="117.826"
+													stroke="url(#paint0_linear_44_950)" stroke-opacity="0.62"
+													stroke-width="33.2514" />
+												<defs>
+													<linearGradient id="paint0_linear_44_950" x1="126.5" y1="0.319824"
+														x2="126.5" y2="269.223" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#1D1F21" stop-opacity="0.63" />
+														<stop offset="0.447861" stop-color="#1D1F21" stop-opacity="0" />
+													</linearGradient>
+												</defs>
+											</svg>
+
+											<picture>
+												<source type='image/webp' srcset='img/gallery/03.webp'>
+												<img src='img/gallery/03.png' alt='paint image'>
+											</picture>
+										</div>
+									</div>
+									<div class="nft-orders__name-content">
+										<!-- <p>NFT #9238239</p> -->
+										<p>Name of NFT</p>
+										<p>12, June 14:00</p>
+									</div>
+								</div>
+								<div class="nft-orders__crypto">
+									<p>Crypto</p>
+									<div class="nft-orders__crypto-content">
+										<p>EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </p>
+										<i class="copy"></i>
+									</div>
+								</div>
+								<div class="nft-orders__status">
+									<p>Success</p>
+								</div>
+								<div class="nft-orders__price">
+									<p>Price</p>
+									<p>$100 322</p>
+								</div>
+								<div class="nft-orders__date">
+									<p>12, June 14:00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="workers ">
+				<div class="workers">
+					<div class="workers__cntr">
+						<h3 class="workers__title">My NFT orders</h3>
+						<div class="workers__heading">
+							<p class="workers__heading-name">Name</p>
+							<p class="workers__heading-mail">Mail</p>
+							<p class="workers__heading-comment">Comment</p>
+							<p class="workers__heading-plan">Plan</p>
+						</div>
+						<div class="workers__items">
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+							<div class="workers__item">
+								<div class="workers__name">
+									<p>T-SHIRT</p>
+								</div>
+								<div class="workers__mail">
+									<p>emailofcustomer@gmail.com</p>
+								</div>
+								<div class="workers__comment">
+									<p>Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had
+										county. The use him
+										without greatly can private.</p>
+									<button>Show more</button>
+								</div>
+								<div class="workers__plan">
+									<p>One month</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="js/swiper-bundle.min.js"></script>
+
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
