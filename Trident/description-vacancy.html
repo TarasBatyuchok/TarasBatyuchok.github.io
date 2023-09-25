@@ -1,1 +1,265 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link rel="stylesheet" href="css/style.min.css">   <!-- Link Swiper's CSS -->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />  <title>description-vacancy</title></head><body>    <div class="content">  <div id="pet"></div></div>    <header class="header">  <div class="header__container">    <a href="index.html" class="header__logo">      <picture><source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg" alt="logo"></picture>    </a>    <nav class="navbar">      <ul class="navbar__items">        <li>          <a href="#">Рекламодавцям</a>        </li>        <li>          <a href="page-vacancies.html">            наші вакансії          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">            <mask id="mask0_817_255" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"              height="24">              <rect width="24" height="24" fill="#D9D9D9" />            </mask>            <g mask="url(#mask0_817_255)">              <path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#D7FF61" />            </g>          </svg>        </a>        </li>        <li>          <div>            <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8251 0.5L4.18237 0.5L0.000366211 7.49655L27.9855 7.49655L23.8251 0.5Z" fill="#B7B7B7"/>              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8372 14.4385L4.1845 14.4385L0.000366211 21.5004L27.9997 21.5004L23.8372 14.4385Z" fill="#B7B7B7"/>              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8251 7.46826L4.18237 7.46826L0.000366211 14.4648L27.9855 14.4648L23.8251 7.46826Z" fill="#B7B7B7"/>              </svg>             </div>          <a href="#">Trident apps</a>          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">            <mask id="mask0_817_625" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">            <rect width="24" height="24" fill="#D9D9D9"/>            </mask>            <g mask="url(#mask0_817_625)">            <path d="M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z" fill="#B7B7B7"/>            </g>            </svg>        </li>      </ul>      <div class="dropdown">        <div class="select">          <span class="selected">UA</span>          <svg class="caret" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">            <mask id="mask0_817_274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">            <rect width="20" height="20" fill="#D9D9D9"/>            </mask>            <g mask="url(#mask0_817_274)">            <path d="M10 12.8112L5 7.8112L6.16667 6.64453L10 10.4779L13.8333 6.64453L15 7.8112L10 12.8112Z" fill="white"/>            </g>            </svg>        </div>        <ul class="menu">          <li class="active">UA</li>          <li>EN</li>        </ul>      </div>      <button class="burger__button">        <div class="burger-icon"></div>      </button>    </nav>  </div></header>    <main class="page">    </main>    <footer class="footer">    <div class="footer__container">        <div class="footer__flex-wrapper">            <a href="index.html" class="footer__logo">                <picture><source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg" alt="logo"></picture>            </a>            <ul class="list">                <li class="list__item-mail"><a href="mailto:trident@gmail.com">Trident@gmail.com</a></li>            </ul>            <ul class="list">                <li class="list__item-social"><a href="#">Telegram</a></li>                <li class="list__item-social"><a href="#">Instagram</a></li>                <li class="list__item-social"><a href="#">Linkedin</a></li>            </ul>            <nav class="footer__navigation">                <ul class="list">                    <li class="list__item-nav"><a href="#">головна</a></li>                    <li class="list__item-nav"><a href="#">усі вакансії</a></li>                    <li class="list__item-nav"><a href="#">рекламодавцям</a></li>                    <li class="list__item-nav"><a href="#">блог</a></li>                    <li class="list__item-nav"><a href="#">trident apps</a></li>                </ul>            </nav>        </div>        <h4 class="footer__text">&copy <span id="year"> </span> Trident. All rigths rederved.</h4>    </div></footer>    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>    <script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css"> <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>description-vacancy</title>
+</head>
+
+<body>
+  <div class="content">
+    <div id="pet"></div>
+  </div>
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <picture>
+          <source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg" alt="logo">
+        </picture>
+      </a>
+      <nav class="navbar">
+        <ul class="navbar__items">
+          <li>
+            <a href="#">Рекламодавцям</a>
+          </li>
+          <li>
+            <a href="page-vacancies.html">
+              наші вакансії
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_817_255" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                  height="24">
+                  <rect width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_817_255)">
+                  <path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#D7FF61" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <div>
+              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.8251 0.5L4.18237 0.5L0.000366211 7.49655L27.9855 7.49655L23.8251 0.5Z" fill="#B7B7B7" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.8372 14.4385L4.1845 14.4385L0.000366211 21.5004L27.9997 21.5004L23.8372 14.4385Z"
+                  fill="#B7B7B7" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.8251 7.46826L4.18237 7.46826L0.000366211 14.4648L27.9855 14.4648L23.8251 7.46826Z"
+                  fill="#B7B7B7" />
+              </svg>
+            </div>
+            <a href="#">Trident apps</a>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_817_625" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_817_625)">
+                <path d="M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z" fill="#B7B7B7" />
+              </g>
+            </svg>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">UA</span>
+            <svg class="caret" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_817_274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
+                height="20">
+                <rect width="20" height="20" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_817_274)">
+                <path d="M10 12.8112L5 7.8112L6.16667 6.64453L10 10.4779L13.8333 6.64453L15 7.8112L10 12.8112Z"
+                  fill="white" />
+              </g>
+            </svg>
+          </div>
+          <ul class="menu">
+            <li class="active">UA</li>
+            <li>EN</li>
+          </ul>
+        </div>
+        <button class="burger__button">
+          <span class="burger-icon"></span>
+        </button>
+      </nav>
+
+
+    </div>
+  </header>
+  <div class="preloader" id="preloader">
+    <div class="dote-container">
+      <div class="dote"></div>
+    </div>
+    <div class="dote-container">
+      <div class="dote"></div>
+    </div>
+    <div class="dote-container">
+      <div class="dote"></div>
+    </div>
+  </div>
+  <main class="page">
+    <section class="description-vacancy">
+      <div class="description-vacancy__container"> <a href="./index.html" class="description-vacancy__back-link">
+          <picture>
+            <source srcset="./images/arrow_back_for_vacancies.webp" type="image/webp"><img
+              src="./images/arrow_back_for_vacancies.png" alt="arrow">
+          </picture> Вакансії
+        </a>
+        <div class="description-vacancy__wrapper">
+          <div class="description-vacancy__title-section">
+            <div class="description-vacancy__title-container">
+              <h2 class="description-vacancy__title">MEDIA BUYER FACEBOOK</h2>
+              <div class="description-vacancy__img">
+                <picture>
+                  <source srcset="./images/star_description-vacancies.webp" type="image/webp"><img
+                    src="./images/star_description-vacancies.png" alt="star">
+                </picture>
+              </div>
+            </div>
+            <div class="description-vacancy__location">Gambling | Full-time | Kyiv/Office</div>
+            <div class="description-vacancy__text">
+              <p>В команду Trident Media шукаємо людину з досвідом на позицію MEDIA BUYER FACEBOOK. Будемо раді вітати у
+                сильній команді, пропонуємо стабільне місце роботи з дійсно якісно налагодженою інфраструктурою і
+                прозорими умовами.</p>
+            </div>
+          </div>
+          <div class="description-vacancy__benefit-section">
+            <h2 class="description-vacancy__benefit-title">Ми тобі пропонуємо все, щоб ти досягав крутих результатів, а
+              саме:</h2>
+            <div class="description-vacancy__wrapper">
+              <div class="description-vacancy__list-benefit">
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 01 </p>
+                  <p class="description-vacancy__text"> Власна розробка Android додатків: більше 3-х років робимо пріли,
+                    якими користуються всі відомі команди ринку </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 02 </p>
+                  <p class="description-vacancy__text"> Крутий відділ моушн дизайну: нові креативи отримаєш протягом
+                    дня; </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 03 </p>
+                  <p class="description-vacancy__text"> Свій фарм відділ: таких міцних акків ти ще не бачив </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 04 </p>
+                  <p class="description-vacancy__text"> Зрозуміла і справедлива фінансова мотивація </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 05 </p>
+                  <p class="description-vacancy__text"> Гнучкий графік роботи і безлімітна відпустка </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 06 </p>
+                  <p class="description-vacancy__text"> Сучасний офіс в самому центрі Києва + в нас завжди є світло </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 07 </p>
+                  <p class="description-vacancy__text"> Підтримку і мотивацію, відсутність бюрократії і мікро
+                    менеджменту </p>
+                </div>
+              </div>
+            </div>
+            <h2 class="description-vacancy__benefit-subtitle">Очікуємо від тебе:</h2>
+            <div class="description-vacancy__wrapper">
+              <div class="description-vacancy__list-benefit">
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 01 </p>
+                  <p class="description-vacancy__text"> Успішний досвід з Facebook більше року в Gambling вертикалі;
+                  </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 02 </p>
+                  <p class="description-vacancy__text"> Актуальный досвід роботи з бюджетами від 10005/дейлі (протягом
+                    останніх 3-х місяців): </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> 03 </p>
+                  <p class="description-vacancy__text"> Скріни твоєї статки </p>
+                </div>
+                <div class="description-vacancy__list-item">
+                  <p class="description-vacancy__number"> PS </p>
+                  <p class="description-vacancy__text"> Вся команда працює в офісі, тому віддалений формат роботи не
+                    розглядаємо! </p>
+                </div>
+              </div>
+              <div class="description-vacancy__wrapper-btn"><button class="description-vacancy__button"> Подавайся тут
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
+                      height="24">
+                      <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_1016_392)">
+                      <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"
+                        fill="black" />
+                    </g>
+                  </svg> </button></div>
+            </div>
+          </div>
+          <div class="description-vacancy__telegram">
+            <div class="description-vacancy__telegram-icon">
+              <picture>
+                <source srcset="./images/telegram-vacancies-section.webp" type="image/webp"><img
+                  src="./images/telegram-vacancies-section.png" alt="telegram">
+              </picture>
+            </div>
+            <div class="description-vacancy__telegram-description">
+              <h3 class="description-vacancy__telegram-title">Залишилися питання?</h3>
+              <p class="description-vacancy__telegram-text">Пиши @yodec в телеграм. Ми чекаємо на тебе.</p> <a
+                class="description-vacancy__telegram-btn"> Перейти в телеграм <svg width="25" height="24"
+                  viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
+                    height="24">
+                    <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1016_392)">
+                    <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"
+                      fill="white" />
+                  </g>
+                </svg> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__flex-wrapper">
+        <a href="index.html" class="footer__logo">
+          <picture>
+            <source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg"
+              alt="logo">
+          </picture>
+        </a>
+        <ul class="list">
+          <li class="list__item-mail"><a href="mailto:trident@gmail.com">Trident@gmail.com</a></li>
+        </ul>
+        <ul class="list">
+          <li class="list__item-social"><a href="#">Telegram</a></li>
+          <li class="list__item-social"><a href="#">Instagram</a></li>
+          <li class="list__item-social"><a href="#">Linkedin</a></li>
+        </ul>
+        <nav class="footer__navigation">
+          <ul class="list">
+            <li class="list__item-nav"><a href="#">головна</a></li>
+            <li class="list__item-nav"><a href="#">усі вакансії</a></li>
+            <li class="list__item-nav"><a href="#">рекламодавцям</a></li>
+            <li class="list__item-nav"><a href="#">блог</a></li>
+            <li class="list__item-nav"><a href="#">trident apps</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h4 class="footer__text">&copy <span id="year"> </span> Trident. All rigths rederved.</h4>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>

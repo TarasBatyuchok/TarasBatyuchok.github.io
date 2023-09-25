@@ -1,984 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css"> <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <title>Trident</title>
-</head>
-
-<body>
-  <div class="content">
-    <div id="pet"></div>
-  </div>
-  <header class="header">
-    <div class="header__container">
-      <a href="index.html" class="header__logo">
-        <picture>
-          <source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg" alt="logo">
-        </picture>
-      </a>
-      <nav class="navbar">
-        <ul class="navbar__items">
-          <li>
-            <a href="#">Рекламодавцям</a>
-          </li>
-          <li>
-            <a href="page-vacancies.html">
-              наші вакансії
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="mask0_817_255" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
-                  height="24">
-                  <rect width="24" height="24" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_817_255)">
-                  <path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#D7FF61" />
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <div>
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M23.8251 0.5L4.18237 0.5L0.000366211 7.49655L27.9855 7.49655L23.8251 0.5Z" fill="#B7B7B7" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M23.8372 14.4385L4.1845 14.4385L0.000366211 21.5004L27.9997 21.5004L23.8372 14.4385Z"
-                  fill="#B7B7B7" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M23.8251 7.46826L4.18237 7.46826L0.000366211 14.4648L27.9855 14.4648L23.8251 7.46826Z"
-                  fill="#B7B7B7" />
-              </svg>
-            </div>
-            <a href="#">Trident apps</a>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <mask id="mask0_817_625" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
-                height="24">
-                <rect width="24" height="24" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_817_625)">
-                <path d="M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z" fill="#B7B7B7" />
-              </g>
-            </svg>
-          </li>
-        </ul>
-        <div class="dropdown">
-          <div class="select">
-            <span class="selected">UA</span>
-            <svg class="caret" width="20" height="20" viewBox="0 0 20 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <mask id="mask0_817_274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
-                height="20">
-                <rect width="20" height="20" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_817_274)">
-                <path d="M10 12.8112L5 7.8112L6.16667 6.64453L10 10.4779L13.8333 6.64453L15 7.8112L10 12.8112Z"
-                  fill="white" />
-              </g>
-            </svg>
-          </div>
-          <ul class="menu">
-            <li class="active">UA</li>
-            <li>EN</li>
-          </ul>
-        </div>
-        <button class="burger__button">
-          <div class="burger-icon"></div>
-        </button>
-      </nav>
-
-
-    </div>
-  </header>
-  <main class="page">
-    <section class="hero"">  <div class=" hero__container">
-      <h1 class="hero__title">Trident</h1>
-      <nav class="sub-nav">
-        <ul class="sub-nav__list">
-          <li class="sub-nav__item"> <a href="#"> Наш бенчмарк - ідеально </a> </li>
-          <li class="sub-nav__item"> <a href="#"> Наша пристарасть - СРА маркетинг </a> </li>
-          <li class="sub-nav__item"> <a href="#" class=""> Наша рутина - шукати, знаходити та виходити за межі відомого
-              індустрії </a> </li>
-          <li class="sub-nav__button"> <a href="#"> Стати частиною команди <svg width="25" height="24"
-                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-                  height="24">
-                  <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_1016_392)">
-                  <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"
-                    fill="black" />
-                </g>
-              </svg> </a> </li>
-        </ul>
-      </nav>
-      </div>
-    </section>
-    <section class="naming">
-      <div class="naming__container">
-        <div class="naming__union"> <svg width="100%" height="100%" viewBox="0 0 477 379" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M238.184 378.823L167.434 284.703L0 284.703L149.732 0.181721L175.889 0.181641L173.123 94.4618L125.856 189.272L187.489 189.272L220.429 0.181876H238.184V0.513318L238.206 0.181876H255.96L288.901 189.272L350.534 189.272L303.266 94.4618L300.501 0.181641L326.657 0.181721L476.389 284.703L308.956 284.703L238.206 378.823L238.184 378.492V378.823Z"
-              fill="#FF4C21" />
-          </svg> </div>
-        <div class="naming__wrapper">
-          <h3 class="naming__title">Історія неймінгу</h3>
-          <p class="naming__description"> Назва зʼявилась внаслідок сформованого виразу в світі арбітражу:
-            "лити/заливати трафік". Ми пограли в аналогію з водою - як основною світового океану, бо трафік є основою
-            діджитал маркетингу. Посейдон - є богом води, що перегукується з виразом "лити траф", а його тризуб -
-            важливий елемент у керуванні своїм царством, а ще це пряма відсилка до місця походження нашої компанії -
-            України</p>
-        </div>
-      </div>
-    </section>
-    <section class="time-line">
-      <div class="time-line__container">
-        <h2 class="time-line__title">Історія Бізнесу</h2>
-      </div> <svg class="time-line__svg" height="346" width="100%" viewBox="0 0 2267 346" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <g> <!-- class="squiggle" -->
-          <path class="hidden"
-            d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"
-            stroke="#D7FF61" />
-          <circle id="circle1" class="circle hidden" cx="254" cy="344" r="4" fill="#D7FF61" />
-        </g>
-        <g>
-          <path class="hidden"
-            d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"
-            stroke="#D7FF61" />
-          <circle id="circle2" class="circle hidden" cx="850" cy="100" r="4" fill="#D7FF61" />
-        </g>
-        <g>
-          <path class="hidden"
-            d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"
-            stroke="#D7FF61" />
-          <circle id="circle3" class="circle hidden" cx="1473" cy="2" r="4" fill="#D7FF61" />
-        </g>
-        <g>
-          <path class="hidden"
-            d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"
-            stroke="#D7FF61" />
-          <circle id="circle4" class="circle hidden" cx="2000" cy="245" r="4" fill="#D7FF61" />
-        </g>
-      </svg>
-      <div class="text-container hidden">
-        <div class="text-wrapper">
-          <h5 class="year">2020</h5>
-          <p class="text"> Створення команди 4 працівники, в офісі на 22 кв.м, працюємо з 1джерелом трафіку </p>
-          <h6 class="sub-data"> 01.10.2020: </h6>
-          <div class="sub-text-wrapper">
-            <p class="sub-text"> Hac 6, ми запускаємо сервіс оренди додатків Trident Apps </p>
-            <p class="sub-text"> Першими запровадили тарифну сітку оплати за оренду </p>
-            <p class="sub-text"> Першими реалізували можливість лити трафік на всі додатки з одним неймінгом </p>
-            <p class="sub-text"> Розробили свою систему відправки push повідомлень </p>
-          </div>
-        </div>
-      </div>
-      <div class="text-container hidden">
-        <div class="text-wrapper">
-          <h5 class="year">2021</h5>
-          <p class="text"> Нас вже 29, у нас новий офіс, ми <br> запустили нові джерела трафіку <br> (google, in-app,
-            tik-tok) </p>
-        </div>
-      </div>
-      <div class="text-container hidden">
-        <div class="text-wrapper">
-          <h5 class="year">2022</h5>
-          <p class="text">Нас більше 60</p>
-          <p class="text">Переглянули поділ та процеси всередині команди</p>
-          <p class="text">Створили інфрастуктуру для медіа-баєрів та розробників - сервіси по автоматизації рутинних
-            робіт.</p>
-          <p class="text">Створили свою системи аттрибуції для додатків.</p>
-        </div>
-      </div>
-      <div class="text-container hidden">
-        <div class="text-wrapper">
-          <h5 class="year">2023</h5>
-          <p class="text">Loading ...</p>
-        </div>
-      </div>
-    </section>
-    <section class="time-line-mobile">
-      <div class="time-line-wrapper">
-        <h2 class="title">Історія Бізнесу</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"> <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />
-                <circle cx="10" cy="173" r="10" fill="#D7FF61" />
-              </svg>
-              <div class="time-line-description">
-                <h5 class="mobile-year">2020</h5>
-                <p class="mobile-text">Створення команди 4 працівники, в офісі на 22 кв.м, працюємо з 1джерелом трафіку
-                </p>
-                <h5 class="mobile-sub-data">01.10.2020:</h5>
-                <p class="sub-mobile-text"> Hac 6, ми запускаємо сервіс оренди додатків Trident Apps </p>
-                <p class="sub-mobile-text"> Першими запровадили тарифну сітку оплати за оренду </p>
-                <p class="sub-mobile-text"> Першими реалізували можливість лити трафік на всі додатки з одним неймінгом
-                </p>
-                <p class="sub-mobile-text"> Розробили свою систему відправки push повідомлень </p>
-              </div>
-            </div>
-            <div class="swiper-slide"> <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />
-                <circle cx="10" cy="173" r="10" fill="#D7FF61" />
-              </svg>
-              <div class="time-line-description">
-                <h5 class="mobile-year">2021</h5>
-                <p class="mobile-text"> Нас вже 29, у нас новий офіс, <br>ми запустили нові джерела трафіку <br>
-                  (google, in-app, tik-tok) </p>
-              </div>
-            </div>
-            <div class="swiper-slide"> <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />
-                <circle cx="10" cy="173" r="10" fill="#D7FF61" />
-              </svg>
-              <div class="time-line-description">
-                <h5 class="mobile-year">2022</h5>
-                <p class="mobile-text">Нас більше 60</p>
-                <p class="mobile-text">Переглянули поділ та процеси всередині команди.</p>
-                <p class="mobile-text">Створили інфрастуктуру для медіа-баєрів та розробників - сервіси по автоматизації
-                  рутинних робіт.</p>
-                <p class="mobile-text">Створили свою системи аттрибуції для додатків.</p>
-              </div>
-            </div>
-            <div class="swiper-slide"> <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />
-                <circle cx="10" cy="173" r="10" fill="#D7FF61" />
-              </svg>
-              <div class="time-line-description">
-                <h5 class="mobile-year">2023</h5>
-                <p class="mobile-text">Loading ...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section class="directions">
-      <div class="directions__wrapper">
-        <div class="directions__container">
-          <h2 class="directions__title">Бізнес напрямки</h2> <!-- wrapper -->
-          <div class="directions__card-wrapper"> <!-- card-1-->
-            <div class="card"> <!-- card-item -->
-              <di class="card__item-media" id="card-item"> <!-- card-icons -->
-                <div class="card__icons">
-                  <div class="card__image">
-                    <picture>
-                      <source srcset="./images/img-media.webp" type="image/webp"><img src="./images/img-media.png"
-                        alt="images">
-                    </picture>
-                  </div>
-                  <div class="card__icon-arrow">
-                    <picture>
-                      <source srcset="./images/arrow-media.webp" type="image/webp"><img src="./images/arrow-media.png"
-                        alt="arrow">
-                    </picture>
-                  </div>
-                </div> <!-- card description -->
-                <div class="card__description">
-                  <h5 class="card__title"> Trident media buying </h5>
-                  <p class="card__descr">До нас йдуть за якісним Facebook та Google трафіком</p>
-                </div>
-            </div> <!-- card-1-->
-            <div class="card"> <!-- card-item -->
-              <div class="card__item-apps" id="card-item"> <!-- card-icons -->
-                <div class="card__icons">
-                  <div class="card__image">
-                    <picture>
-                      <source srcset="./images/img-app.webp" type="image/webp"><img src="./images/img-app.png"
-                        alt="img">
-                    </picture>
-                  </div>
-                  <div class="card__icon-arrow">
-                    <picture>
-                      <source srcset="./images/arrow-app.webp" type="image/webp"><img src="./images/arrow-app.png"
-                        alt="img">
-                    </picture>
-                  </div>
-                </div> <!-- card description -->
-                <div class="card__description">
-                  <h5 class="card__title black"> Trident media buying </h5>
-                  <p class="card__descr black">До нас йдуть за якісним Facebook та Google трафіком</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!--  3d card -->
-    <section class="media">
-      <div class="media__container">
-        <h2 class="media__title"> Trident media це: </h2>
-        <div class="media__wrapper-card">
-          <div class="media__item">
-            <div class="media__img">
-              <picture>
-                <source srcset="./images/media-img.webp" type="image/webp"><img src="./images/media-img.png" alt="img">
-              </picture>
-            </div>
-            <p class="media__subtitle-card"> Баїнг команди Facebook та Google </p>
-          </div>
-          <div class="media__item">
-            <div class="media__img">
-              <picture>
-                <source srcset="./images/media-img-second.webp" type="image/webp"><img
-                  src="./images/media-img-second.png" alt="img">
-              </picture>
-            </div>
-            <p class="media__subtitle-card"> Власний фармінг </p>
-          </div>
-          <div class="media__item">
-            <div class="media__img">
-              <picture>
-                <source srcset="./images/media-img-third.webp" type="image/webp"><img src="./images/media-img-third.png"
-                  alt="img">
-              </picture>
-            </div>
-            <p class="media__subtitle-card"> Відділ розробки </p>
-          </div>
-          <div class="media__item">
-            <div class="media__img">
-              <picture>
-                <source srcset="./images/media-img-forth.webp" type="image/webp"><img src="./images/media-img-forth.png"
-                  alt="img">
-              </picture>
-            </div>
-            <p class="media__subtitle-card"> Дизайн юніт </p>
-          </div>
-        </div>
-        <div class="media__description-wrapper">
-          <div class="media__description">
-            <div class="media__description-box">
-              <p class="media__text">Trident має декілька команд та всю необхідну інфраструктуру для генерації якісного
-                трафіку через Facebook та Google</p> <a href="#" class="media__button"> почати співпрацю <svg width="25"
-                  height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-                    height="24">
-                    <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
-                  </mask>
-                  <g mask="url(#mask0_1016_392)">
-                    <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"
-                      fill="black" />
-                  </g>
-                </svg> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="approach">
-      <div class="approach__container">
-        <h2 class="approach__title"> наш підхід до роботи будується на <span class="approach__title white">двох</span>
-          принципах: </h2>
-        <div class="approach__wrapper">
-          <div class=" approach__card-container">
-            <div class="approach__card">
-              <div class="approach__card-img">
-                <picture>
-                  <source srcset="./images/icon-principles.webp" type="image/webp"><img
-                    src="./images/icon-principles.png" alt="img">
-                </picture>
-              </div>
-              <p class="approach__card-text">Аналітика всьому голова</p>
-            </div>
-            <div class="approach__card">
-              <div class="approach__card-img">
-                <picture>
-                  <source srcset="./images/star.webp" type="image/webp"><img src="./images/star.png" alt="img">
-                </picture>
-              </div>
-              <p class="approach__card-text">Якість важливіша за кількість</p>
-            </div>
-          </div>
-          <div class="approach__description">
-            <p class="approach__description-text">Тому наші клієнти отримують завжди прозору інформацію про трафік та
-              ліди які отримують</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="indication">
-      <div class="indication__container">
-        <h2 class="indication__title">Показники:</h2>
-        <div class="indication__circles">
-          <div class="indication-circle left">
-            <div class="indication-circle__description ">
-              <p class="indication-circle__number" number="30">30</p>
-              <p class="indication-circle__text">активних географій в роботі щоденно</p>
-            </div>
-          </div>
-          <div class="indication-circle center">
-            <div class="indication-circle__description">
-              <p class="indication-circle__number" number="30">30</p>
-              <p class="indication-circle__text">активних рекламодавців щоденно</p>
-            </div>
-          </div>
-          <div class="indication-circle right">
-            <div class="indication-circle__description">
-              <p class="indication-circle__number" number="65">65</p>
-              <p class="indication-circle__text">людей в команді</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="introduction">
-      <div class="introduction__container">
-        <h3 class="introduction__title">Знайомся:</h3>
-        <div class="introduction__team"> <!-- circle one -->
-          <div class="item-circle">
-            <div class="circle-ceo">
-              <div class="circle-ceo__img">
-                <picture>
-                  <source srcset="./images/dart-wayder.webp" type="image/webp"><img src="./images/dart-wayder.jpg"
-                    alt="img">
-                </picture>
-              </div>
-              <div class="circle-text">
-                <p>The Driver the company's strategic development - The Driver the company's strategic development -</p>
-              </div>
-            </div>
-            <p class="circle-ceo__name">Dart Wayder</p>
-            <p class="circle-ceo__position">CEO trident</p>
-            <p class="circle-ceo__description"> Dart - драйвер стратегічного розвитку компанії. Він у постійному пошуку
-              нових можливостей та технічних рішень, що дозволять масштабувати бізнес </p>
-          </div>
-          <div class="item-circle">
-            <div class="circle-coo">
-              <div class="circle-coo__img">
-                <picture>
-                  <source srcset="./images/dart-wayder.webp" type="image/webp"><img src="./images/dart-wayder.jpg"
-                    alt="img">
-                </picture>
-              </div>
-              <div class="text-coo">
-                <p>The Driver the company's strategic development - The Driver the company's strategic development -</p>
-              </div>
-            </div>
-            <p class="circle-coo__name">Dart Wayder</p>
-            <p class="circle-coo__position">COO trident</p>
-            <p class="circle-coo__description"> Dart, як зрозуміло з назви позиції - головний по процесам у компанії.
-              Завдяки йому, все що робиться в команді, робиться без заминок, вчасно і з найкращим результатом </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="join">
-      <div class="join__container">
-        <h3 class="join__title"> Приєднуйся до команди </h3>
-        <div class="join__wrapper">
-          <div class="join__circles">
-            <div class="orange-circle">
-              <div class="orange-circle__img">
-                <picture>
-                  <source srcset="./images/star-join.webp" type="image/webp"><img src="./images/star-join.png"
-                    alt="img">
-                </picture>
-              </div>
-              <div class="orange-circle__text">
-                <p>analitics rules the world - analitics rules the world -</p>
-              </div>
-            </div>
-            <div class="black-circle">
-              <div class="black-circle__img">
-                <picture>
-                  <source srcset="./images/union-join.webp" type="image/webp"><img src="./images/union-join.png"
-                    alt="img">
-                </picture>
-              </div>
-              <div class="black-circle__text">
-                <p>analitics rules the world - analitics rules the world -</p>
-              </div>
-            </div>
-          </div>
-          <div class="join__description">
-            <p class="join__toptext">Шукаємо амбіційних, відповідальних, легких на пійом.P.S. ми завжди відкриті до
-              нових знайомств, тому не соромся показати своє CV.</p>
-            <p class="join__subtext">Як кажуть <b>«великому кораблю - велике плавання»</b></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="benefit">
-      <div class="benefit__container">
-        <h2 class="benefit__title">Що ти отримаєш від нас:</h2>
-        <div class="benefit__wrapper">
-          <div class="benefit-cards">
-            <div class="benefit-cards__item">
-              <div class="benefit-cards__img">
-                <picture>
-                  <source srcset="./images/benefit-img-atom.webp" type="image/webp"><img
-                    src="./images/benefit-img-atom.png" alt="img">
-                </picture>
-              </div>
-              <p class="benefit-cards__text"> Виплати медіабаєрам до 40% </p>
-            </div>
-            <div class="benefit-cards__item">
-              <div class="benefit-cards__img">
-                <picture>
-                  <source srcset="./images/benefit-img-data.webp" type="image/webp"><img
-                    src="./images/benefit-img-data.png" alt="img">
-                </picture>
-              </div>
-              <p class="benefit-cards__text"> Зрозумілі та прозорі умови нарахування бонусів </p>
-            </div>
-            <div class="benefit-cards__item">
-              <div class="benefit-cards__img">
-                <picture>
-                  <source srcset="./images/benefit-img-atom.webp" type="image/webp"><img
-                    src="./images/benefit-img-atom.png" alt="img">
-                </picture>
-              </div>
-              <p class="benefit-cards__text"> Зарплатні ставки вище середніх по ринку </p>
-            </div>
-          </div>
-          <div class="benefit-descriptions">
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 01 </з>
-              <p class="benefit-descriptions__text"> Офіційне працевлаштування </p>
-            </div>
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 02 </з>
-              <p class="benefit-descriptions__text"> Безлімітна відпутка </p>
-            </div>
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 03 </з>
-              <p class="benefit-descriptions__text"> Перегляд умов двічі на рік </p>
-            </div>
-          </div>
-          <div class="benefit-descriptions">
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 04 </з>
-              <p class="benefit-descriptions__text"> Подарунки на важливі дати </p>
-            </div>
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 05 </з>
-              <p class="benefit-descriptions__text"> Офіс біля метро, з кавою та смаколиками </p>
-            </div>
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 06 </p>
-              <p class="benefit-descriptions__text"> Крутезний корпоративний мерч <span
-                  class="benefit-descriptions__tip">
-                  <picture>
-                    <source srcset="./images/Tip-06.webp" type="image/webp"><img src="./images/Tip-06.png" alt="img">
-                  </picture>
-                  <div class="benefit-descriptions__tip-text" id="hint"> котрий не хочеться відправити на дачу </div>
-                </span> </p>
-            </div>
-          </div>
-          <div class="benefit-descriptions">
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 07 </з>
-              <p class="benefit-descriptions__text"> Незабутні тусовки в офісі, корпоративи та подоРожі командою </p>
-            </div>
-            <div class="benefit-descriptions__item">
-              <p class="benefit-descriptions__number"> 08 </з>
-              <p class="benefit-descriptions__text"> Конференції та навчання </p>
-            </div>
-          </div>
-          <div class="sub-description">
-            <div class="sub-description__img">
-              <picture>
-                <source srcset="./images/sub-description.webp" type="image/webp"><img src="./images/sub-description.png"
-                  alt="img">
-              </picture>
-            </div>
-            <p class="sub-description__text"> а головне, за що нас люблять - <b>свобода дій</b>.Ти відповідаєш за свій
-              результат, ніхто не буде стояти у тебе над душею. Бери відповідальність, збільшуй бюджети і забудь про
-              обмеження у кар’єрному зростанні. </p>
-          </div>
-        </div>
-        <h2 class="benefit__title">команда:</h2>
-        <div class="benefit__wrapper-team">
-          <div class="slider-team">
-            <div class="swiper-wrapper">
-              <div class="slider swiper-slide">
-                <div class="slider__img">
-                  <picture>
-                    <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="team">
-                  </picture>
-                </div>
-              </div>
-              <div class="slider swiper-slide">
-                <div class="slider__img">
-                  <picture>
-                    <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="team">
-                  </picture>
-                </div>
-              </div>
-              <div class="slider swiper-slide">
-                <div class="slider__img">
-                  <picture>
-                    <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="team">
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div class="slider__info">
-              <div class="slider__info-years">
-                <p class="slider__text">Середній вік команди</p>
-                <p class="slider__subText">25 років</p>
-              </div>
-              <div class="slider__info-lvl">
-                <p class="slider__text">Середній рівень Амбіцій</p>
-                <p class="slider__subText">безмежний</p>
-              </div> <a href="#" class="slider__btn"> Стати частиною команди <svg width="25" height="24"
-                  viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-                    height="24">
-                    <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
-                  </mask>
-                  <g mask="url(#mask0_1016_392)">
-                    <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"
-                      fill="black" />
-                  </g>
-                </svg> </a>
-            </div>
-          </div>
-          <div class="slider-team__pagination">
-            <div class="slider-team__prev"> <svg width="17" height="28" viewBox="0 0 17 28" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.3013 0.665359L16.668 3.03203L5.70135 14.9987L16.668 25.9654L14.3013 28.332L0.968018 14.9987L14.3013 0.665359Z"
-                  fill="black" />
-              </svg> </div>
-            <div class="slider-team__next"> <svg width="17" height="28" viewBox="0 0 17 28" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6987 27.3346L0.332031 24.968L11.2987 14.0013L0.332031 3.03464L2.6987 0.667969L16.032 14.0013L2.6987 27.3346Z"
-                  fill="black" />
-              </svg> </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="vacancies">
-      <div class="vacancies__container">
-        <h2 class="vacancies__title">вакансії</h2>
-        <div class="vacancies__wrapper">
-          <div class="positions"> <a href="description-vacancy.html" class="positions__item">
-              <div class="positions__img">
-                <picture>
-                  <source srcset="./images/vacancies_stroke-1.webp" type="image/webp"><img
-                    src="./images/vacancies_stroke-1.png" alt="img">
-                </picture>
-              </div>
-              <div class="positions__description">
-                <div class="positions__title">
-                  <p class="positions__title-text">Junior, Middle Google ads specialist</p>
-                  <picture>
-                    <source srcset="./images/arrow_position.webp" type="image/webp"><img
-                      src="./images/arrow_position.png" alt="arrow">
-                  </picture>
-                </div>
-                <div class="position__locarion">
-                  <p>Kyiv | full-time | Gambling</p>
-                </div>
-              </div>
-            </a> <a href="description-vacancy.html" class="positions__item">
-              <div class="positions__img">
-                <picture>
-                  <source srcset="./images/vacancies_stroke-2.webp" type="image/webp"><img
-                    src="./images/vacancies_stroke-2.png" alt="img">
-                </picture>
-              </div>
-              <div class="positions__description">
-                <div class="positions__title">
-                  <p class="positions__title-text">Junior, Middle Google ads specialist</p>
-                  <picture>
-                    <source srcset="./images/arrow_position.webp" type="image/webp"><img
-                      src="./images/arrow_position.png" alt="arrow">
-                  </picture>
-                </div>
-                <div class="position__locarion">
-                  <p>Kyiv | full-time | Gambling</p>
-                </div>
-              </div>
-            </a> <a href="description-vacancy.html" class="positions__item">
-              <div class="positions__img">
-                <picture>
-                  <source srcset="./images/vacancies_stroke-3.webp" type="image/webp"><img
-                    src="./images/vacancies_stroke-3.png" alt="img">
-                </picture>
-              </div>
-              <div class="positions__description">
-                <div class="positions__title">
-                  <p class="positions__title-text">Junior, Middle Google ads specialist</p>
-                  <picture>
-                    <source srcset="./images/arrow_position.webp" type="image/webp"><img
-                      src="./images/arrow_position.png" alt="arrow">
-                  </picture>
-                </div>
-                <div class="position__locarion">
-                  <p>Kyiv | full-time | Gambling</p>
-                </div>
-              </div>
-            </a> <a href="description-vacancy.html" class="positions__item">
-              <div class="positions__img">
-                <picture>
-                  <source srcset="./images/vacancies_stroke-4.webp" type="image/webp"><img
-                    src="./images/vacancies_stroke-4.png" alt="img">
-                </picture>
-              </div>
-              <div class="positions__description">
-                <div class="positions__title">
-                  <p class="positions__title-text">Junior, Middle Google ads specialist</p>
-                  <picture>
-                    <source srcset="./images/arrow_position.webp" type="image/webp"><img
-                      src="./images/arrow_position.png" alt="arrow">
-                  </picture>
-                </div>
-                <div class="position__locarion">
-                  <p>Kyiv | full-time | Gambling</p>
-                </div>
-              </div>
-            </a> <a href="description-vacancy.html" class="positions__item">
-              <div class="positions__img">
-                <picture>
-                  <source srcset="./images/vacancies_stroke-1.webp" type="image/webp"><img
-                    src="./images/vacancies_stroke-1.png" alt="img">
-                </picture>
-              </div>
-              <div class="positions__description">
-                <div class="positions__title">
-                  <p class="positions__title-text">Junior, Middle Google ads specialist</p>
-                  <picture>
-                    <source srcset="./images/arrow_position.webp" type="image/webp"><img
-                      src="./images/arrow_position.png" alt="arrow">
-                  </picture>
-                </div>
-                <div class="position__locarion">
-                  <p>Kyiv | full-time | Gambling</p>
-                </div>
-              </div>
-            </a> <a href="page-vacancies.html" href="#" class="positions__btn"> Дивитись усі <svg width="25" height="24"
-                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-                  height="24">
-                  <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_1016_392)">
-                  <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"
-                    fill="#D7FF61" />
-                </g>
-              </svg> </a> </div>
-        </div>
-      </div>
-    </section>
-    <section class="social">
-      <div class="lime-line"> </div>
-      <div class="orange-line">
-        <p class="orange-line__text">Ми в режимі LiVE - trident live - Ми в режимі LiVE - trident live</p>
-      </div>
-      <div class="social__container">
-        <div class="social__cards"> <a href="#" class="social__instagram">
-            <div class="social__instagram-circle">
-              <picture>
-                <source srcset="./images/ellipse-instagram.webp" type="image/webp"><img
-                  src="./images/ellipse-instagram.png" alt="">
-              </picture>
-              <div class="social__instagram-icon">
-                <picture>
-                  <source srcset="./images/instagram.webp" type="image/webp"><img src="./images/instagram.png"
-                    alt="img">
-                </picture>
-              </div>
-              <div class="social__text">
-                <p>наш instagram профіль - наш instagram профіль - trident-</p>
-              </div>
-            </div>
-            <div class="social__arrow">
-              <picture>
-                <source srcset="./images/arrow_instagram.webp" type="image/webp"><img src="./images/arrow_instagram.png"
-                  alt="arrow">
-              </picture>
-            </div>
-          </a> <a class="social__telegram">
-            <div class="social__telegram-circle">
-              <div class="social__telegram-icon">
-                <picture>
-                  <source srcset="./images/telegram.webp" type="image/webp"><img src="./images/telegram.png" alt="img">
-                </picture>
-              </div>
-              <div class="social__text">
-                <p>наш telegram профіль - наш telegram профіль - trident - </p>
-              </div>
-            </div>
-            <div class="social__arrow">
-              <picture>
-                <source srcset="./images/arrow_telegram.webp" type="image/webp"><img src="./images/arrow_telegram.png"
-                  alt="arrow">
-              </picture>
-            </div>
-          </a> </div>
-      </div>
-    </section>
-    <section class="in-media">
-      <div class="in-media__container">
-        <div class="in-media__wrapper">
-          <h2 class="in-media__title"> Ми в медіа </h2>
-          <div class="in-media__pagination">
-            <div class="in-media__next"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                viewBox="0 0 22 22" fill="none">
-                <mask id="mask0_77_400" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22"
-                  height="22">
-                  <rect x="0.714844" y="0.714844" width="20.5714" height="20.5714" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_77_400)">
-                  <path d="M14.4786 19.754L16 18.2671L8.95 11.377L16 4.48692L14.4786 3L5.90708 11.377L14.4786 19.754Z"
-                    fill="white" />
-                </g>
-              </svg> </div>
-            <div class="in-media__prev"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                viewBox="0 0 22 22" fill="none">
-                <mask id="mask0_77_400" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22"
-                  height="22">
-                  <rect x="0.714844" y="0.714844" width="20.5714" height="20.5714" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_77_400)">
-                  <path d="M7.52143 19.754L6 18.2671L13.05 11.377L6 4.48692L7.52143 3L16.0929 11.377L7.52143 19.754Z"
-                    fill="white" />
-                </g>
-              </svg> </div>
-          </div>
-        </div>
-        <div class="in-media__slider">
-          <div class="swiper-wrapper">
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-            <div class="in-media__slid swiper-slide">
-              <div class="in-media__slid-img">
-                <picture>
-                  <source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img">
-                </picture>
-              </div>
-              <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__flex-wrapper">
-        <a href="index.html" class="footer__logo">
-          <picture>
-            <source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg"
-              alt="logo">
-          </picture>
+<head>  <meta charset="UTF-8">  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link rel="stylesheet" href="css/style.min.css">   <!-- Link Swiper's CSS -->   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />  <title>Trident</title></head>
+<!-- oncontextmenu="return false" -->
+<body >
+    <div class="content">  <div id="pet"></div></div>
+    <header class="header">
+  <div class="header__container">
+    <a href="index.html" class="header__logo">
+      <picture><source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg" alt="logo"></picture>
+    </a>
+    <nav class="navbar">
+      <ul class="navbar__items">
+        <li>
+          <a href="#">Рекламодавцям</a>
+        </li>
+        <li>
+          <a href="page-vacancies.html">
+            наші вакансії
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_817_255" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+              height="24">
+              <rect width="24" height="24" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_817_255)">
+              <path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#D7FF61" />
+            </g>
+          </svg>
         </a>
-        <ul class="list">
-          <li class="list__item-mail"><a href="mailto:trident@gmail.com">Trident@gmail.com</a></li>
+        </li>
+        <li>
+          <div>
+            <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8251 0.5L4.18237 0.5L0.000366211 7.49655L27.9855 7.49655L23.8251 0.5Z" fill="#B7B7B7"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8372 14.4385L4.1845 14.4385L0.000366211 21.5004L27.9997 21.5004L23.8372 14.4385Z" fill="#B7B7B7"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8251 7.46826L4.18237 7.46826L0.000366211 14.4648L27.9855 14.4648L23.8251 7.46826Z" fill="#B7B7B7"/>
+              </svg>   
+          </div>
+          <a href="#">Trident apps</a>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_817_625" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_817_625)">
+            <path d="M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z" fill="#B7B7B7"/>
+            </g>
+            </svg>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">UA</span>
+          <svg class="caret" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_817_274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+            <rect width="20" height="20" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_817_274)">
+            <path d="M10 12.8112L5 7.8112L6.16667 6.64453L10 10.4779L13.8333 6.64453L15 7.8112L10 12.8112Z" fill="white"/>
+            </g>
+            </svg>
+        </div>
+        <ul class="menu">
+          <li class="active">UA</li>
+          <li>EN</li>
         </ul>
-        <ul class="list">
-          <li class="list__item-social"><a href="#">Telegram</a></li>
-          <li class="list__item-social"><a href="#">Instagram</a></li>
-          <li class="list__item-social"><a href="#">Linkedin</a></li>
-        </ul>
-        <nav class="footer__navigation">
-          <ul class="list">
-            <li class="list__item-nav"><a href="#">головна</a></li>
-            <li class="list__item-nav"><a href="#">усі вакансії</a></li>
-            <li class="list__item-nav"><a href="#">рекламодавцям</a></li>
-            <li class="list__item-nav"><a href="#">блог</a></li>
-            <li class="list__item-nav"><a href="#">trident apps</a></li>
-          </ul>
-        </nav>
       </div>
-      <h4 class="footer__text">&copy <span id="year"> </span> Trident. All rigths rederved.</h4>
+      <button class="burger__button">
+        <span class="burger-icon"></span>
+      </button>
+    </nav>
+
+
+  </div>
+</header>
+    <div class="preloader" id="preloader">  <div class="dote-container">    <div class="dote"></div>  </div>  <div class="dote-container">    <div class="dote"></div>  </div>  <div class="dote-container">    <div class="dote"></div>  </div>  </div>
+    <main class="page">
+        <section class="hero"">  <div class=" hero__container">  <h1 class="hero__title">Trident</h1>  <nav class="sub-nav">    <ul class="sub-nav__list">      <li class="sub-nav__item">        <a href="#">          Наш бенчмарк - ідеально        </a>      </li>      <li class="sub-nav__item">        <a href="#">          Наша пристарасть - СРА маркетинг        </a>      </li>      <li class="sub-nav__item">        <a href="#" class="">          Наша рутина - шукати, знаходити та виходити за межі відомого індустрії        </a>      </li>      <li class="sub-nav__button">        <a   href="#">          Стати частиною команди          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">            <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">            <rect x="0.5" width="24" height="24" fill="#D9D9D9"/>            </mask>            <g mask="url(#mask0_1016_392)">            <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z" fill="black"/>            </g>            </svg>        </a>      </li>    </ul>  </nav>  </div></section>
+        <section class="naming">  <div class="naming__container">    <div class="naming__union">      <svg width="100%" height="100%" viewBox="0 0 477 379" fill="none" xmlns="http://www.w3.org/2000/svg">        <path fill-rule="evenodd" clip-rule="evenodd"          d="M238.184 378.823L167.434 284.703L0 284.703L149.732 0.181721L175.889 0.181641L173.123 94.4618L125.856 189.272L187.489 189.272L220.429 0.181876H238.184V0.513318L238.206 0.181876H255.96L288.901 189.272L350.534 189.272L303.266 94.4618L300.501 0.181641L326.657 0.181721L476.389 284.703L308.956 284.703L238.206 378.823L238.184 378.492V378.823Z"          fill="#FF4C21" />      </svg>    </div>    <div class="naming__wrapper">      <h3 class="naming__title">Історія неймінгу</h3>      <p class="naming__description">        Назва зʼявилась внаслідок сформованого виразу в світі арбітражу: "лити/заливати трафік". Ми пограли в аналогію        з водою - як основною світового океану, бо трафік є основою діджитал маркетингу. Посейдон - є богом води, що        перегукується з виразом "лити траф", а його тризуб - важливий елемент у керуванні своїм царством, а ще це пряма        відсилка до місця походження нашої компанії - України</p>    </div>  </div></section>
+        <section class="time-line">    <div class="time-line__container">        <h2 class="time-line__title">Історія Бізнесу</h2>    </div>    <svg class="time-line__svg" height="346" width="100%" viewBox="0 0 2267 346" fill="none"        xmlns="http://www.w3.org/2000/svg">        <g>            <!-- class="squiggle" -->            <path class="hidden"                d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"                stroke="#D7FF61" />            <circle id="circle1" class="circle hidden" cx="254" cy="344" r="4" fill="#D7FF61" />        </g>        <g>            <path class="hidden"                d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"                stroke="#D7FF61" />            <circle id="circle2" class="circle hidden" cx="850" cy="100" r="4" fill="#D7FF61" />        </g>        <g>            <path class="hidden"                d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"                stroke="#D7FF61" />            <circle id="circle3" class="circle hidden" cx="1473" cy="2" r="4" fill="#D7FF61" />        </g>        <g>            <path class="hidden"                d="M1 138C155 151 243.5 341.4 255.5 345C421.5 234 542.052 251.436 620 245C729 236 806 116 849 100C1081 100 1359 111 1465 1C1824.5 1 2020.5 266 2020.5 198C2020.5 168.996 1953.14 206.56 2005 250.5C2041 281 2260 218 2266.5 186.5"                stroke="#D7FF61" />            <circle id="circle4" class="circle hidden" cx="2000" cy="245" r="4" fill="#D7FF61" />        </g>    </svg>    <div class="text-container hidden">        <div class="text-wrapper">            <h5 class="year">2020</h5>            <p class="text">                Створення команди 4 працівники, в офісі на 22 кв.м, працюємо з 1джерелом трафіку            </p>            <h6 class="sub-data">                01.10.2020:            </h6>            <div class="sub-text-wrapper">                <p class="sub-text">                    Hac 6, ми запускаємо сервіс оренди додатків Trident Apps                </p>                <p class="sub-text">                    Першими запровадили тарифну сітку оплати за оренду                </p>                <p class="sub-text">                    Першими реалізували можливість лити трафік на всі додатки з одним неймінгом                </p>                <p class="sub-text">                    Розробили свою систему відправки push повідомлень                </p>            </div>        </div>    </div>    <div class="text-container hidden">        <div class="text-wrapper">            <h5 class="year">2021</h5>            <p class="text">                Нас вже 29, у нас новий офіс, ми <br>                запустили нові джерела трафіку <br>                (google, in-app, tik-tok)            </p>        </div>    </div>    <div class="text-container hidden">        <div class="text-wrapper">            <h5 class="year">2022</h5>            <p class="text">Нас більше 60</p>            <p class="text">Переглянули поділ та процеси всередині команди</p>            <p class="text">Створили інфрастуктуру для медіа-баєрів та розробників - сервіси по автоматизації                рутинних робіт.</p>            <p class="text">Створили свою системи аттрибуції для додатків.</p>        </div>    </div>    <div class="text-container hidden">        <div class="text-wrapper">            <h5 class="year">2023</h5>            <p class="text">Loading ...</p>        </div>    </div></section><section class="time-line-mobile">    <div class="time-line-wrapper">        <h2 class="title">Історія Бізнесу</h2>        <div class="swiper mySwiper">            <div class="swiper-wrapper">                <div class="swiper-slide">                    <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"                        xmlns="http://www.w3.org/2000/svg">                        <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />                        <circle cx="10" cy="173" r="10" fill="#D7FF61" />                    </svg>                    <div class="time-line-description">                        <h5 class="mobile-year">2020</h5>                        <p class="mobile-text">Створення команди 4 працівники, в офісі на 22 кв.м, працюємо з                            1джерелом                            трафіку</p>                        <h5 class="mobile-sub-data">01.10.2020:</h5>                        <p class="sub-mobile-text">                            Hac 6, ми запускаємо сервіс оренди додатків Trident Apps                        </p>                        <p class="sub-mobile-text">                            Першими запровадили тарифну сітку оплати за оренду                        </p>                        <p class="sub-mobile-text">                            Першими реалізували можливість лити трафік на всі додатки з одним неймінгом                        </p>                        <p class="sub-mobile-text">                            Розробили свою систему відправки push повідомлень                        </p>                    </div>                </div>                <div class="swiper-slide">                    <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"                        xmlns="http://www.w3.org/2000/svg">                        <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />                        <circle cx="10" cy="173" r="10" fill="#D7FF61" />                    </svg>                    <div class="time-line-description">                        <h5 class="mobile-year">2021</h5>                        <p class="mobile-text">                            Нас вже 29, у нас новий офіс,                            <br>ми запустили нові джерела трафіку                            <br> (google, in-app, tik-tok)                        </p>                    </div>                </div>                <div class="swiper-slide">                    <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"                        xmlns="http://www.w3.org/2000/svg">                        <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />                        <circle cx="10" cy="173" r="10" fill="#D7FF61" />                    </svg>                    <div class="time-line-description">                        <h5 class="mobile-year">2022</h5>                        <p class="mobile-text">Нас більше 60</p>                        <p class="mobile-text">Переглянули поділ та процеси всередині команди.</p>                        <p class="mobile-text">Створили інфрастуктуру для медіа-баєрів та розробників - сервіси                            по автоматизації рутинних робіт.</p>                        <p class="mobile-text">Створили свою системи аттрибуції для додатків.</p>                    </div>                </div>                <div class="swiper-slide">                    <svg width="100%" height="100%" viewBox="0 0 2267 346" fill="none"                        xmlns="http://www.w3.org/2000/svg">                        <path d="M0 173 L2267 173" stroke="#D7FF61" stroke-width="3" />                        <circle cx="10" cy="173" r="10" fill="#D7FF61" />                    </svg>                    <div class="time-line-description">                        <h5 class="mobile-year">2023</h5>                        <p class="mobile-text">Loading ...</p>                    </div>                </div>            </div>        </div></section>
+        <section class="directions">  <div class="directions__wrapper">    <div class="directions__container">      <h2 class="directions__title">Бізнес напрямки</h2>      <!-- wrapper -->      <div class="directions__card-wrapper">        <!-- card-1-->        <div class="card">          <!-- card-item -->          <di class="card__item-media" id="card-item">            <!-- card-icons -->            <div class="card__icons">              <div class="card__image">                  <picture><source srcset="./images/img-media.webp" type="image/webp"><img src="./images/img-media.png" alt="images"></picture>              </div>              <div class="card__icon-arrow">                <picture><source srcset="./images/arrow-media.webp" type="image/webp"><img src="./images/arrow-media.png" alt="arrow"></picture>              </div>            </div>            <!-- card description -->            <div class="card__description">              <h5 class="card__title">                Trident media buying              </h5>              <p class="card__descr">До нас йдуть за якісним Facebook та Google трафіком</p>            </div>        </div>        <!-- card-1-->        <div class="card">          <!-- card-item -->          <div class="card__item-apps" id="card-item">            <!-- card-icons -->            <div class="card__icons">              <div class="card__image">                  <picture><source srcset="./images/img-app.webp" type="image/webp"><img src="./images/img-app.png" alt="img"></picture>              </div>              <div class="card__icon-arrow">                <picture><source srcset="./images/arrow-app.webp" type="image/webp"><img src="./images/arrow-app.png" alt="img"></picture>              </div>            </div>            <!-- card description -->            <div class="card__description">              <h5 class="card__title black">                Trident media buying              </h5>              <p class="card__descr black">До нас йдуть за якісним Facebook та Google трафіком</p>            </div>          </div>        </div>      </div>    </div>  </div></section><!--  3d card -->
+        <section class="media">  <div class="media__container">    <h2 class="media__title">      Trident media це:    </h2>    <div class="media__wrapper-card">      <div class="media__item">        <div class="media__img">          <picture><source srcset="./images/media-img.webp" type="image/webp"><img src="./images/media-img.png" alt="img"></picture>        </div>        <p class="media__subtitle-card">          Баїнг команди Facebook та Google        </p>      </div>      <div class="media__item">        <div class="media__img">          <picture><source srcset="./images/media-img-second.webp" type="image/webp"><img src="./images/media-img-second.png" alt="img"></picture>        </div>        <p class="media__subtitle-card">          Власний фармінг        </p>      </div>      <div class="media__item">        <div class="media__img">          <picture><source srcset="./images/media-img-third.webp" type="image/webp"><img src="./images/media-img-third.png" alt="img"></picture>        </div>        <p class="media__subtitle-card">          Відділ розробки        </p>      </div>      <div class="media__item">        <div class="media__img">          <picture><source srcset="./images/media-img-forth.webp" type="image/webp"><img src="./images/media-img-forth.png" alt="img"></picture>        </div>        <p class="media__subtitle-card">          Дизайн юніт        </p>      </div>    </div>    <div class="media__description-wrapper">      <div class="media__description">        <div class="media__description-box">          <p class="media__text">Trident має декілька команд та всю необхідну інфраструктуру для генерації якісного            трафіку через Facebook та            Google</p>          <a href="#" class="media__button">            почати співпрацю            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">              <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"                height="24">                <rect x="0.5" width="24" height="24" fill="#D9D9D9" />              </mask>              <g mask="url(#mask0_1016_392)">                <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"                  fill="black" />              </g>            </svg>          </a>        </div>      </div>    </div>  </div></section>
+        <section class="approach">  <div class="approach__container">    <h2 class="approach__title">      наш підхід до роботи будується на      <span class="approach__title white">двох</span> принципах:    </h2>    <div class="approach__wrapper">      <div class=" approach__card-container">        <div class="approach__card">          <div class="approach__card-img">            <picture><source srcset="./images/icon-principles.webp" type="image/webp"><img src="./images/icon-principles.png" alt="img"></picture>          </div>          <p class="approach__card-text">Аналітика всьому голова</p>        </div >        <div class="approach__card">          <div class="approach__card-img">            <picture><source srcset="./images/star.webp" type="image/webp"><img src="./images/star.png" alt="img"></picture>          </div>          <p class="approach__card-text">Якість важливіша за кількість</p>        </div>      </div>      <div class="approach__description">        <p class="approach__description-text">Тому наші клієнти отримують завжди прозору інформацію про трафік та ліди які отримують</p>      </div>    </div>  </div></section>
+        <section class="indication">  <div class="indication__container">    <h2 class="indication__title">Показники:</h2>    <div class="indication__circles">      <div class="indication-circle left">        <div class="indication-circle__description ">          <p class="indication-circle__number"  number="30" >30</p>          <p class="indication-circle__text">активних географій в роботі щоденно</p>        </div>      </div>      <div class="indication-circle center">        <div class="indication-circle__description">          <p class="indication-circle__number"  number="30">30</p>          <p class="indication-circle__text">активних рекламодавців щоденно</p>        </div>      </div>      <div class="indication-circle right">        <div class="indication-circle__description">          <p class="indication-circle__number" number="65">65</p>          <p class="indication-circle__text">людей в команді</p>        </div>      </div>    </div>  </div></section>
+        <section class="introduction">  <div class="introduction__container">    <h3 class="introduction__title">Знайомся:</h3>    <div class="introduction__team">      <!-- circle one -->      <div class="item-circle">        <div class="circle-ceo">          <div class="circle-ceo__img">            <picture><source srcset="./images/dart-wayder.webp" type="image/webp"><img src="./images/dart-wayder.jpg" alt="img"></picture>          </div>          <div class="circle-text">            <p>The Driver the company's strategic development - The Driver the company's strategic development -</p>          </div>        </div>        <p class="circle-ceo__name">Dart Wayder</p>        <p class="circle-ceo__position">CEO trident</p>        <p class="circle-ceo__description">          Dart - драйвер стратегічного розвитку компанії. Він у постійному пошуку нових можливостей та технічних          рішень, що дозволять масштабувати бізнес        </p>      </div>      <div class="item-circle">        <div class="circle-coo">          <div class="circle-coo__img">            <picture><source srcset="./images/dart-wayder.webp" type="image/webp"><img src="./images/dart-wayder.jpg" alt="img"></picture>          </div>          <div class="text-coo">            <p>The Driver the company's strategic development - The Driver the company's strategic development -</p>          </div>        </div>        <p class="circle-coo__name">Dart Wayder</p>        <p class="circle-coo__position">COO trident</p>        <p class="circle-coo__description">          Dart, як зрозуміло з назви позиції - головний по процесам у компанії. Завдяки йому, все що робиться в команді, робиться без заминок, вчасно і з найкращим результатом        </p>      </div>    </div>  </div></section>
+        <section class="join">  <div class="join__container">    <h3 class="join__title">      Приєднуйся до команди    </h3>    <div class="join__wrapper">      <div class="join__circles">        <div class="orange-circle">          <div class="orange-circle__img">            <picture><source srcset="./images/star-join.webp" type="image/webp"><img src="./images/star-join.png" alt="img"></picture>          </div>          <div class="orange-circle__text">            <p>analitics rules the world - analitics rules the world -</p>          </div>        </div>        <div class="black-circle">          <div class="black-circle__img">            <picture><source srcset="./images/union-join.webp" type="image/webp"><img src="./images/union-join.png" alt="img"></picture>          </div>          <div class="black-circle__text">            <p>analitics rules the world - analitics rules the world -</p>          </div>        </div>      </div>      <div class="join__description">        <p class="join__toptext">Шукаємо амбіційних, відповідальних, легких на пійом.P.S. ми завжди відкриті до нових знайомств, тому не соромся показати своє CV.</p>        <p class="join__subtext">Як кажуть  <b>«великому кораблю - велике плавання»</b></p>      </div>    </div>  </div></section>
+        <section class="benefit">  <div class="benefit__container">    <h2 class="benefit__title">Що ти отримаєш від нас:</h2>    <div class="benefit__wrapper">      <div class="benefit-cards">        <div class="benefit-cards__item">          <div class="benefit-cards__img">            <picture><source srcset="./images/benefit-img-atom.webp" type="image/webp"><img src="./images/benefit-img-atom.png" alt="img"></picture>          </div>          <p class="benefit-cards__text">            Виплати медіабаєрам до 40%          </p>        </div>        <div class="benefit-cards__item">          <div class="benefit-cards__img">            <picture><source srcset="./images/benefit-img-data.webp" type="image/webp"><img src="./images/benefit-img-data.png" alt="img"></picture>          </div>          <p class="benefit-cards__text">            Зрозумілі та прозорі умови нарахування бонусів          </p>        </div>        <div class="benefit-cards__item">          <div class="benefit-cards__img">            <picture><source srcset="./images/benefit-img-atom.webp" type="image/webp"><img src="./images/benefit-img-atom.png" alt="img"></picture>          </div>          <p class="benefit-cards__text">            Зарплатні ставки вище середніх по ринку          </p>        </div>      </div>      <div class="benefit-descriptions">        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            01          </p>          <p class="benefit-descriptions__text">            Офіційне працевлаштування          </p>        </div>        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            02            </p>          <p class="benefit-descriptions__text">            Безлімітна відпутка          </p>        </div>        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            03            </p>          <p class="benefit-descriptions__text">            Перегляд умов двічі на рік          </p>        </div>      </div>      <div class="benefit-descriptions">        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            04            </p>          <p class="benefit-descriptions__text">            Подарунки на важливі дати          </p>        </div>        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            05            </p>          <p class="benefit-descriptions__text">            Офіс біля метро, з кавою та смаколиками          </p>        </div>        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            06          </p>          <p class="benefit-descriptions__text">            Крутезний корпоративний мерч            <span class="benefit-descriptions__tip">              <picture><source srcset="./images/Tip-06.webp" type="image/webp"><img src="./images/Tip-06.png" alt="img"></picture>              <div class="benefit-descriptions__tip-text" id="hint">                котрий не хочеться відправити на дачу              </div>            </span>          </p>        </div>      </div>      <div class="benefit-descriptions">        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            07            </p>          <p class="benefit-descriptions__text">            Незабутні тусовки в офісі, корпоративи та подоРожі командою          </p>        </div>        <div class="benefit-descriptions__item">          <p class="benefit-descriptions__number">            08            </p>          <p class="benefit-descriptions__text">            Конференції та навчання          </p>        </div>      </div>      <div class="sub-description">        <div class="sub-description__img">          <picture><source srcset="./images/sub-description.webp" type="image/webp"><img src="./images/sub-description.png" alt="img"></picture>        </div>        <p class="sub-description__text">          а головне, за що нас люблять - <b>свобода дій</b>.Ти відповідаєш за свій результат, ніхто не буде стояти у          тебе над          душею. Бери відповідальність, збільшуй бюджети і забудь про обмеження у кар’єрному зростанні.        </p>      </div>    </div>    <h2 class="benefit__title">команда:</h2>    <div class="benefit__wrapper-team">      <div class="slider-team">        <div class="swiper-wrapper">          <div class="slider swiper-slide">            <div class="slider__img">              <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="team"></picture>            </div>          </div>          <div class="slider swiper-slide">            <div class="slider__img">              <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="team"></picture>            </div>          </div>          <div class="slider swiper-slide">            <div class="slider__img">              <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="team"></picture>            </div>          </div>        </div>        <div class="slider__info">          <div class="slider__info-years">            <p class="slider__text">Середній вік команди</p>            <p class="slider__subText">25 років</p>          </div>          <div class="slider__info-lvl">            <p class="slider__text">Середній рівень Амбіцій</p>            <p class="slider__subText">безмежний</p>          </div>          <a href="#" class="slider__btn">            Стати частиною команди            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">              <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"                height="24">                <rect x="0.5" width="24" height="24" fill="#D9D9D9" />              </mask>              <g mask="url(#mask0_1016_392)">                <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"                  fill="black" />              </g>            </svg>          </a>        </div>      </div>      <div class="slider-team__pagination">        <div class="slider-team__prev">          <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">            <path              d="M14.3013 0.665359L16.668 3.03203L5.70135 14.9987L16.668 25.9654L14.3013 28.332L0.968018 14.9987L14.3013 0.665359Z"              fill="black" />          </svg>        </div>        <div class="slider-team__next">          <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">            <path              d="M2.6987 27.3346L0.332031 24.968L11.2987 14.0013L0.332031 3.03464L2.6987 0.667969L16.032 14.0013L2.6987 27.3346Z"              fill="black" />          </svg>        </div>      </div>    </div>  </div></section>
+        <section class="vacancies">  <div class="vacancies__container">    <h2 class="vacancies__title">вакансії</h2>    <div class="vacancies__wrapper">      <div class="positions">        <a  href="description-vacancy.html" class="positions__item">          <div class="positions__img">            <picture><source srcset="./images/vacancies_stroke-1.webp" type="image/webp"><img src="./images/vacancies_stroke-1.png" alt="img"></picture>          </div>          <div class="positions__description">            <div class="positions__title">              <p class="positions__title-text">Junior, Middle Google ads specialist</p>              <picture><source srcset="./images/arrow_position.webp" type="image/webp"><img src="./images/arrow_position.png" alt="arrow"></picture>            </div>            <div class="position__locarion">              <p>Kyiv | full-time | Gambling</p>            </div>          </div>        </a>        <a href="description-vacancy.html" class="positions__item">          <div class="positions__img">            <picture><source srcset="./images/vacancies_stroke-2.webp" type="image/webp"><img src="./images/vacancies_stroke-2.png" alt="img"></picture>          </div>          <div class="positions__description">            <div class="positions__title">              <p class="positions__title-text">Junior, Middle Google ads specialist</p>              <picture><source srcset="./images/arrow_position.webp" type="image/webp"><img src="./images/arrow_position.png" alt="arrow"></picture>            </div>            <div class="position__locarion">              <p>Kyiv | full-time | Gambling</p>            </div>          </div>        </a>        <a href="description-vacancy.html" class="positions__item">          <div class="positions__img">            <picture><source srcset="./images/vacancies_stroke-3.webp" type="image/webp"><img src="./images/vacancies_stroke-3.png" alt="img"></picture>          </div>          <div class="positions__description">            <div class="positions__title">              <p class="positions__title-text">Junior, Middle Google ads specialist</p>              <picture><source srcset="./images/arrow_position.webp" type="image/webp"><img src="./images/arrow_position.png" alt="arrow"></picture>            </div>            <div class="position__locarion">              <p>Kyiv | full-time | Gambling</p>            </div>          </div>        </a>        <a href="description-vacancy.html" class="positions__item">          <div class="positions__img">            <picture><source srcset="./images/vacancies_stroke-4.webp" type="image/webp"><img src="./images/vacancies_stroke-4.png" alt="img"></picture>          </div>          <div class="positions__description">            <div class="positions__title">              <p class="positions__title-text">Junior, Middle Google ads specialist</p>              <picture><source srcset="./images/arrow_position.webp" type="image/webp"><img src="./images/arrow_position.png" alt="arrow"></picture>            </div>            <div class="position__locarion">              <p>Kyiv | full-time | Gambling</p>            </div>          </div>        </a>        <a  href="description-vacancy.html" class="positions__item">          <div class="positions__img">            <picture><source srcset="./images/vacancies_stroke-1.webp" type="image/webp"><img src="./images/vacancies_stroke-1.png" alt="img"></picture>          </div>          <div class="positions__description">            <div class="positions__title">              <p class="positions__title-text">Junior, Middle Google ads specialist</p>              <picture><source srcset="./images/arrow_position.webp" type="image/webp"><img src="./images/arrow_position.png" alt="arrow"></picture>            </div>            <div class="position__locarion">              <p>Kyiv | full-time | Gambling</p>            </div>          </div>        </a>        <a  href="page-vacancies.html" href="#" class="positions__btn">          Дивитись усі          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">            <mask id="mask0_1016_392" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"              height="24">              <rect x="0.5" width="24" height="24" fill="#D9D9D9" />            </mask>            <g mask="url(#mask0_1016_392)">              <path d="M12.5 20L11.075 18.6L16.675 13H4.5V11H16.675L11.075 5.4L12.5 4L20.5 12L12.5 20Z"                fill="#D7FF61" />            </g>          </svg>        </a>      </div>    </div>  </div></section>
+        <section class="social">  <div class="lime-line">  </div>  <div class="orange-line">    <p class="orange-line__text">Ми в режимі LiVE - trident live - Ми в режимі LiVE - trident live</p>  </div>  <div class="social__container">      <div class="social__cards">        <a href="#" class="social__instagram">          <div class="social__instagram-circle">            <picture><source srcset="./images/ellipse-instagram.webp" type="image/webp"><img  src="./images/ellipse-instagram.png" alt=""></picture>            <div class="social__instagram-icon">              <picture><source srcset="./images/instagram.webp" type="image/webp"><img src="./images/instagram.png" alt="img"></picture>            </div>            <div class="social__text">              <p>наш instagram профіль -  наш instagram профіль - trident-</p>            </div>          </div>          <div class="social__arrow">            <picture><source srcset="./images/arrow_instagram.webp" type="image/webp"><img src="./images/arrow_instagram.png" alt="arrow"></picture>          </div>        </a>        <a class="social__telegram">          <div class="social__telegram-circle">            <div class="social__telegram-icon">              <picture><source srcset="./images/telegram.webp" type="image/webp"><img src="./images/telegram.png" alt="img"></picture>            </div>            <div class="social__text">              <p>наш telegram профіль - наш telegram профіль - trident - </p>            </div>          </div>          <div class="social__arrow">            <picture><source srcset="./images/arrow_telegram.webp" type="image/webp"><img src="./images/arrow_telegram.png" alt="arrow"></picture>          </div>        </a>      </div>  </div></section>
+        <section class="in-media">  <div class="in-media__container">    <div class="in-media__wrapper">      <h2 class="in-media__title">        Ми в медіа      </h2>      <div class="in-media__pagination">        <div class="in-media__next">          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">            <mask id="mask0_77_400" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22"              height="22">              <rect x="0.714844" y="0.714844" width="20.5714" height="20.5714" fill="#D9D9D9" />            </mask>            <g mask="url(#mask0_77_400)">              <path d="M14.4786 19.754L16 18.2671L8.95 11.377L16 4.48692L14.4786 3L5.90708 11.377L14.4786 19.754Z"                fill="white" />            </g>          </svg>        </div>        <div class="in-media__prev">          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">            <mask id="mask0_77_400" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22"              height="22">              <rect x="0.714844" y="0.714844" width="20.5714" height="20.5714" fill="#D9D9D9" />            </mask>            <g mask="url(#mask0_77_400)">              <path d="M7.52143 19.754L6 18.2671L13.05 11.377L6 4.48692L7.52143 3L16.0929 11.377L7.52143 19.754Z"                fill="white" />            </g>          </svg>        </div>      </div>    </div>    <div class="in-media__slider">      <div class="swiper-wrapper">        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>        <div class="in-media__slid swiper-slide">          <div class="in-media__slid-img">            <picture><source srcset="./images/team.webp" type="image/webp"><img src="./images/team.jpg" alt="img"></picture>          </div>          <p class="in-media__slid-description">Lorem ipsum sit met dolor lorem ipsum sit met dolor lorem ipsum sit </p>        </div>      </div>    </div>  </div></section>
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__flex-wrapper">
+            <a href="index.html" class="footer__logo">
+                <picture><source srcset="./images/trident-logo.svg" type="image/webp"><img src="./images/trident-logo.svg" alt="logo"></picture>
+            </a>
+            <ul class="list">
+                <li class="list__item-mail"><a href="mailto:trident@gmail.com">Trident@gmail.com</a></li>
+            </ul>
+            <ul class="list">
+                <li class="list__item-social"><a href="#">Telegram</a></li>
+                <li class="list__item-social"><a href="#">Instagram</a></li>
+                <li class="list__item-social"><a href="#">Linkedin</a></li>
+            </ul>
+            <nav class="footer__navigation">
+                <ul class="list">
+                    <li class="list__item-nav"><a href="#">головна</a></li>
+                    <li class="list__item-nav"><a href="#">усі вакансії</a></li>
+                    <li class="list__item-nav"><a href="#">рекламодавцям</a></li>
+                    <li class="list__item-nav"><a href="#">блог</a></li>
+                    <li class="list__item-nav"><a href="#">trident apps</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h4 class="footer__text">&copy <span id="year"> </span> Trident. All rigths rederved.</h4>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="js/script.min.js"></script>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
