@@ -1,13 +1,17 @@
-const text = `Книга Джима Ловлесса — бізнес-тренера, одного з найпопулярніших європейських мотиваційних спікерів — саме
-про те, як подолати свій страх, незалежно від того, чого саме ви боїтеся: пірнути на глибину, піти на
-співбесіду чи освідчитися в коханні. Десять правил, запропоновані автором у книзі, дадуть вам змогу прогнати
-внутрішніх тигрів і зробити крок уперед, а відтак знайти внутрішню силу для будь-яких звершень.`;
+const text = `«Навіть не рипайся!» «У тебе нічого не вийде!» «Інші не досягли, і ти не зможеш!» 
+ 
+Кожен із нас чув внутрішні голоси, які промовляють ці чи подібні фрази й не дозволяють нам отримати те, про що ми мріємо. Найчастіше ми їх слухаємося й відступаємо. Відкладаємо свою мрію і життя в довгий ящик. А потім, коли життя добігає кінця, страшенно жалкуємо про це, однак уже пізно… Але що, коли їх — страхів-тигрів — можна позбутися?  
+ 
+Книга Джима Ловлесса — бізнес-тренера, одного з найпопулярніших європейських мотиваційних спікерів — саме про те, як здолати свого внутрішнього тигра. Серед його клієнтів — такі всесвітньо відомі компанії, як Apple, British Telecom, Barclays Bank і навіть Національна служба охорони здоров’я Великобританії. `;
+
+const normalizedText = text.replace(/\n+/g, "\n\n");
+const paragraphs = normalizedText.split("\n\n");
 
 // JavaScript код для вставки даних про книгу
 const bookData = {
   title: "Іди туди, де Страшно",
   cover: "./img/book.jpg",
-  description: text,
+  description: paragraphs,
   author: "Джим Лоулесс",
   attributes: [
     "Жанр: Cаморозвиток/психологія",
@@ -18,17 +22,26 @@ const bookData = {
 
 // Розділіть опис на абзаци і вставте їх
 
+const descriptionParagraph = document.querySelector("div#book-exposition");
+console.log(descriptionParagraph);
+
+bookData?.description?.forEach((paragraph) => {
+  const paragraphElement = document.createElement("p");
+  paragraphElement.style.marginTop = "10px";
+  paragraphElement.textContent = paragraph;
+  descriptionParagraph.appendChild(paragraphElement);
+});
+
 document.querySelector("h1").textContent = bookData.title;
 document.querySelector("img#book-cover").src = bookData.cover;
 document.querySelector("a#author-link").textContent = bookData.author;
-document.querySelector("p#book-exposition").textContent = bookData.description;
 document.querySelector("ul#book-attributes").innerHTML = bookData.attributes
   .map((attribute) => `<li>${attribute}</li>`)
   .join("");
 
 // JavaScript код для розгортання/згортання опису книги
 const readMoreButton = document.querySelector("#read-more");
-const bookDescription = document.querySelector("p#book-exposition");
+const bookDescription = document.querySelector("div#book-exposition");
 
 readMoreButton.addEventListener("click", function () {
   if (
