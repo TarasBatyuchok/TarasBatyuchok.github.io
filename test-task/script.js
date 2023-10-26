@@ -84,7 +84,6 @@ commentForm.addEventListener("submit", function (e) {
 
 // laoder
 document.body.onload = function () {
-
   setTimeout(() => {
     const preloader = document.getElementById("preloader");
     if (!preloader.classList.contains("done")) {
@@ -92,6 +91,7 @@ document.body.onload = function () {
     }
   }, 500);
 };
+
 
 
 function year() {
