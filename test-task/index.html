@@ -6,51 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test-Taras Batyuchok</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
   <div class="loader-container" id="preloader">
     <span class="loader"></span>
   </div>
-  <section class="book">
-    <div class="book-container">
-      <h1 class="title-book"></h1>
-      <div class="book-template">
-        <div class="book-img">
-          <img src="./img/book.jpg" alt="Обкладинка книги" id="book-cover">
-        </div>
-        <div class="book-description">
-          <a target="_blank" href="https://kniga.biz.ua/author-dzhim-louless" id="author-link" class="book-author"></a>
-          <ul id="book-attributes">
-          </ul>
-          <button class="button" id="read-more">Опис книги</button>
-          <div class="book-exposition" id="book-exposition">
+  <main>
+
+    <section class="book" data-aos="zoom-in" data-aos-delay="800" data-aos-easing="linear">
+      <div class="book-container">
+        <h1 class="title-book"></h1>
+        <div class="book-template">
+          <div class="book-img">
+            <img src="./img/book.jpg" alt="Обкладинка книги" id="book-cover">
+          </div>
+          <div class="book-description">
+            <a target="_blank" href="https://kniga.biz.ua/author-dzhim-louless" id="author-link"
+              class="book-author"></a>
+            <ul id="book-attributes">
+            </ul>
+            <button class="button" id="read-more">Опис книги</button>
+            <div class="book-exposition" id="book-exposition">
+            </div>
           </div>
         </div>
-
-      </div>
-      <div class="comment">
-        <h2>Відгуки</h2>
-        <div class="comment-wrapper">
-          <form id="comment-form" class="comment-form">
-            <input type="text" id="author-name" class="comment-input" placeholder="Ваше ім'я" required class="">
-            <textarea id="comment-text" placeholder="Ваш коментар" required></textarea>
-            <button type="submit" class="button">Додати коментар</button>
-          </form>
-          <ul id="comment-list" class="comment-list">
-            <li>
-              26.10.2023 20:00 <br>
-              Володимир: <br>
-              Рекомендую!!!!!!!!!
-            </li>
-          </ul>
+        <div class="comment">
+          <h2>Відгуки</h2>
+          <div class="comment-wrapper">
+            <form id="comment-form" class="comment-form">
+              <input type="text" id="author-name" class="comment-input" placeholder="Ваше ім'я" required class="">
+              <textarea id="comment-text" placeholder="Ваш коментар" required></textarea>
+              <button type="submit" class="button">Додати коментар</button>
+            </form>
+            <ul id="comment-list" class="comment-list">
+              <li>
+                26.10.2023 20:00 <br>
+                Володимир: <br>
+                Рекомендую!!!!!!!!!
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-    </div>
+    </section>
 
-  </section>
+    <footer class="copyright">
+      Text Task 2023 <a href="https://github.com/TarasBatyuchok/TarasBatyuchok/blob/main/cv/CV_Taras_Batyuchok.pdf"
+        target="_blank">
+        Taras Batyuchok</a>
+    </footer>
+  </main>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

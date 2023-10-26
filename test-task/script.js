@@ -4,6 +4,7 @@ const text = `«Навіть не рипайся!» «У тебе нічого �
  
 Книга Джима Ловлесса — бізнес-тренера, одного з найпопулярніших європейських мотиваційних спікерів — саме про те, як здолати свого внутрішнього тигра. Серед його клієнтів — такі всесвітньо відомі компанії, як Apple, British Telecom, Barclays Bank і навіть Національна служба охорони здоров’я Великобританії. `;
 
+// трансформація стірнги у масив 
 const normalizedText = text.replace(/\n+/g, "\n\n");
 const paragraphs = normalizedText.split("\n\n");
 
@@ -21,7 +22,6 @@ const bookData = {
 };
 
 // Розділіть опис на абзаци і вставте їх
-
 const descriptionParagraph = document.querySelector("div#book-exposition");
 console.log(descriptionParagraph);
 
@@ -84,10 +84,23 @@ commentForm.addEventListener("submit", function (e) {
 
 // laoder
 document.body.onload = function () {
+
   setTimeout(() => {
     const preloader = document.getElementById("preloader");
     if (!preloader.classList.contains("done")) {
       preloader.classList.add("done");
     }
-  }, 1500);
+  }, 500);
 };
+
+
+function year() {
+  try {
+    const year = document.querySelector("#year");
+    year.textContent = new Date().getFullYear();
+    console.log(year);
+  } catch {
+    console.log(error);
+  }
+}
+year();

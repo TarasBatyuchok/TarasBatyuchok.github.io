@@ -50,6 +50,13 @@ body {
   -ms-user-select: none;
 }
 
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 ::-webkit-scrollbar {
   background-color: transparent;
   display: none;
@@ -213,7 +220,7 @@ textarea {
   .comment-list {
     height: 200px;
   }
-  .comment-form{
+  .comment-form {
     max-width: 100%;
   }
 }
@@ -259,6 +266,11 @@ textarea {
 }
 .loader::after {
   animation-delay: 1s;
+}
+
+.copyright {
+  text-align: center;
+  margin: 10px 10px 10px 10px; 
 }
 
 @keyframes animloader {
