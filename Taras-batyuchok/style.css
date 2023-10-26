@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Sometype+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-border: #ccc;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html,
+body {
+  display: flex;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  height: 100%;
+  background: url("./img/bg.gif") center center/cover no-repeat;
+  color: black;
+  font-weight: 800;
+  font-size: 14px;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+  opacity: 0;
+  width: 0;
+}
+
+/* book */
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10px 0 10px;
+}
+
+.book-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px 41px 42px 42px;
+
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.book-template {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.book-img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.book-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.book-img img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.book-author {
+  font-size: 20px;
+}
+
+.book-description {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.book-description ul {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.book-exposition {
+  margin-top: 20px;
+  font-size: 14px;
+  display: none;
+}
+
+/* comment block */
+.comment {
+  margin-top: 20px;
+}
+.comment-form {
+  max-width: 200px;
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 20px;
+}
+
+.comment-input {
+  padding: 10px;
+  border-radius: 5px;
+  caret-color: var(--black);
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  caret-color: var(--black);
+  font-size: 16px;
+  resize: none;
+}
+
+.comment-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.comment-list {
+  max-width: 400px;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  color: var(--black);
+  overflow-y: scroll;
+}
+
+/* button */
+.button {
+  margin: 10px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+/* media */
+
+@media (max-width: 992px) {
+  .book-template {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-description {
+    text-align: center;
+  }
+  .title-book {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .comment-wrapper {
+    flex-direction: column;
+  }
+  .comment-list {
+    height: 200px;
+  }
+}
+
+/* loader */
+
+.loader-container {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

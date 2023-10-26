@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test-Taras Batyuchok</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="loader-container" id="preloader">
+    <span class="loader"></span>
+  </div>
+  <section class="book">
+    <div class="book-container">
+      <h1 class="title-book"></h1>
+      <div class="book-template">
+        <div class="book-img">
+          <img src="./img/book.jpg" alt="Обкладинка книги" id="book-cover">
+        </div>
+        <div class="book-description">
+          <a href="https://kniga.biz.ua/author-dzhim-louless" id="author-link" class="book-author"></a>
+          <ul id="book-attributes">
+          </ul>
+          <button class="button" id="read-more">Опис книги</button>
+          <p class="book-exposition" id="book-exposition">
+          </p>
+        </div>
+
+      </div>
+      <div class="comment">
+        <h2>Відгуки</h2>
+        <div class="comment-wrapper">
+          <form id="comment-form" class="comment-form">
+            <input type="text" id="author-name" class="comment-input" placeholder="Ваше ім'я" required class="">
+            <textarea id="comment-text" placeholder="Ваш коментар" required></textarea>
+            <button type="submit" class="button">Додати коментар</button>
+          </form>
+          <ul id="comment-list" class="comment-list">
+            <li>
+              26.10.2023 20:00 <br>
+              Володимир: <br>
+              Рекомендую!!!!!!!!!
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
