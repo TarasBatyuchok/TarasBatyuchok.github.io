@@ -66,14 +66,10 @@ commentForm.addEventListener("submit", function (e) {
   const commentText = document.querySelector("#comment-text").value;
 
   if (authorName && commentText) {
-    const currentTime = new Date();
-    const commentTime = `${currentTime.getDate()}.${
-      currentTime.getMonth() + 1
-    }.${currentTime.getFullYear()} ${currentTime.getHours()}:${currentTime.getMinutes()}`;
 
     const commentItem = document.createElement("li");
     commentItem.style.marginTop = "10px";
-    commentItem.innerHTML = `<p>${commentTime} <br> ${authorName}: <br> ${commentText}</p>`;
+    commentItem.innerHTML = `${authorName}: <br> ${commentText}</p>`;
     commentList.appendChild(commentItem);
 
     // Очистити поля вводу
