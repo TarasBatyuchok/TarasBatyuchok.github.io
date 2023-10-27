@@ -21,9 +21,9 @@ const bookData = {
   ],
 };
 
-// Розділіть опис на абзаци і вставте їх
+
 const descriptionParagraph = document.querySelector("div#book-exposition");
-console.log(descriptionParagraph);
+
 
 bookData?.description?.forEach((paragraph) => {
   const paragraphElement = document.createElement("p");
@@ -94,7 +94,6 @@ function year() {
   try {
     const year = document.querySelector("#year");
     year.textContent = new Date().getFullYear();
-    console.log(year);
   } catch {
     console.log(error);
   }
