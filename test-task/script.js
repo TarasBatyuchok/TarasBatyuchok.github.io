@@ -24,7 +24,6 @@ const bookData = {
 
 const descriptionParagraph = document.querySelector("div#book-exposition");
 
-
 bookData?.description?.forEach((paragraph) => {
   const paragraphElement = document.createElement("p");
   paragraphElement.style.marginTop = "10px";
