@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="" class="nav-brand">App</a>
+        <ul>
+            <li class="nav-item"><a href="#">Taras Batyuchok</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container" id="main">
+        <h1>GitHub repos</h1>
+        <form id="repos-form">
+            <label for="github-username">GitHub username</label>
+            <input id="github-username" type="text" placeholder="GitHub username">
+            <button type="submit" id="get-repos" class="btn btn-default">Get repos</button>
+        </form>
+        <ul id="repos-list"></ul>
+    </div>
+
+    <footer id="footer-wrapper">
+
+    </footer>
+
+    <script>
+        const startLoader = element => {
+            element.innerHTML = `<div class="loading-spinner"></div>`;
+        }
+
+        const stopLoader = (element, value) => {
+            element.textContent = value;
+        }
+
+        class FetchWrapper {
+            constructor(baseURL) {
+                this.baseURL = baseURL;
+            }
+
+            get(endpoint) {
+                return fetch(this.baseURL + endpoint)
+                    .then(response => response.json());
+            }
+            // add update essence delete old and add new like edite
+            put(endpoint, body) {
+                return this.#send("put", endpoint, body);
+            }
+            // create new abstract essence
+            post(endpoint, body) {
+                return this.#send("post", endpoint, body);
+            }
+
+            delete(endpoint, body) {
+                return this.#send("delete", endpoint, body);
+            }
+
+            #send(method, endpoint, body) {
+                return fetch(this.baseURL + endpoint, {
+                    method,
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(body)
+                }).then(response => response.json());
+            }
+        }
+
+
+        const GithubAPI = new FetchWrapper("https://api.github.com/");
+
+        const form = document.querySelector("#repos-form");
+        const username = document.querySelector("#github-username");
+        const button = document.querySelector("#get-repos");
+        const list = document.querySelector("#repos-list");
+
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+
+            startLoader(button);
+            GithubAPI.get(`users/${username.value}/repos`)
+                .then(data => {
+                    list.innerHTML = "";
+                    data.forEach(repo => {
+                        list.insertAdjacentHTML("beforeend", `<li>
+                <a href="${repo.html_url}" target="_blank">
+                    <h2>${repo.full_name}</h2>
+                    ${repo.description ? `<p>${repo.description}</p>` : `Unfortunately did not leave a description`}
+                </a>
+            </li>`);
+                    });
+                })
+                .finally(() => {
+                    stopLoader(button, "Get repos");
+                });
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
