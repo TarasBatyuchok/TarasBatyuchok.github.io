@@ -1,0 +1,35 @@
+/* 4. Сітка закріплена за вікном і проходить під усіма секціями. */
+.site-grid {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+}
+.section {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+}
+.section__number {
+  position: absolute;
+  z-index: 2;
+  top: clamp(22px, 5vw, 72px);
+  left: clamp(22px, 5vw, 72px);
+  color: #d7ff86;
+  font: 500 clamp(14px, 1.1vw, 17px)/1.4 system-ui, sans-serif;
+  letter-spacing: .14em;
+  opacity: .8;
+  pointer-events: none;
+}
+.section--placeholder .section__number {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(190, 255, 198, .45);
+  font-size: clamp(96px, 18vw, 280px);
+  font-weight: 300;
+  letter-spacing: -.09em;
+}
+

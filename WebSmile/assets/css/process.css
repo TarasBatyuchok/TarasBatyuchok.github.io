@@ -1,0 +1,86 @@
+/* 8. Одна секція: хвиля та три кроки на картках поверх спільної сітки. */
+.services {
+  min-height: auto;
+  padding-bottom: clamp(48px, 6vw, 88px);
+  background: rgba(0, 0, 0, .12);
+}
+.services__bridge { margin-bottom: clamp(32px, 5vw, 72px); }
+.services__container {
+  width: min(1360px, calc(100% - 48px));
+  margin: 0 auto;
+}
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 1.7vw, 24px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.services__card {
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+  padding: clamp(28px, 3vw, 48px);
+  border: 1px solid rgba(119, 153, 110, .32);
+  border-radius: 12px;
+  background: rgba(18, 23, 18, .58);
+}
+.services__step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 34px;
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.services__step-label, .packages__step-label {
+  color: #aab5a6;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.services__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background: #222622;
+  color: var(--accent);
+}
+.services__icon img { width: 27px; height: 27px; }
+.services__title, .packages__title {
+  margin: 0 0 16px;
+  color: #f3f4f1;
+  font-size: clamp(21px, 2vw, 27px);
+  font-weight: 600;
+}
+.services__description, .packages__description {
+  margin: 0 0 30px;
+  color: #a8aaa8;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.services__link, .packages__link {
+  display: grid;
+  place-items: center;
+  min-height: 46px;
+  margin-top: auto;
+  border-radius: 5px;
+  background: #242424;
+  color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .25s, color .25s;
+}
+.services__link, .packages__link:hover, .services__link, .packages__link:focus-visible {
+  background: var(--accent);
+  color: #101704;
+}
+

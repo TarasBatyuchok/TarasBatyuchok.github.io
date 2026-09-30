@@ -1,0 +1,68 @@
+/* 7. Закриті перемички з хвилями між повноекранними секціями. */
+.bridge {
+  position: relative;
+  z-index: 1;
+  height: clamp(150px, 16.5vw, 264px);
+  overflow: hidden;
+  border-block: 1px solid rgba(180, 220, 150, .08);
+}
+.bridge__canvas {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  filter: brightness(.28);
+  pointer-events: none;
+  transition: opacity 900ms ease;
+}
+/* Усі три перемички мають однакове затемнення. */
+.bridge--visible .bridge__canvas { opacity: 1; }
+/* У другої перемички окреме зображення з потрібним напрямком хвилі. */
+.bridge__content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: clamp(24px, 8vw, 140px);
+  max-width: 46%;
+  transform: translateY(-42%);
+  text-align: right;
+  opacity: 0;
+  text-shadow: 0 2px 22px #000, 0 1px 5px #000;
+  transition: opacity 1s .15s ease, transform 1s .15s ease;
+}
+.bridge--visible .bridge__content {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.bridge--reverse .bridge__content {
+  right: auto;
+  left: clamp(24px, 8vw, 140px);
+  text-align: left;
+}
+.bridge--third .bridge__content {
+  right: auto;
+  left: 50%;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  transform: translate(-50%, -42%);
+  text-align: center;
+}
+.bridge--third.bridge--visible .bridge__content {
+  transform: translate(-50%, -50%);
+}
+.bridge__eyebrow {
+  margin: 0;
+  color: #d2f2a9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+.bridge__title {
+  margin: 8px 0 0;
+  color: #f8ffe8;
+  font-size: clamp(24px, 3.2vw, 47px);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+

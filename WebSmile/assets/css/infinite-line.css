@@ -1,0 +1,40 @@
+/* 6. Infinite Line: два однакові фрагменти рухаються на ширину одного.
+   Початок другого точно збігається з кінцем першого, тому повтор непомітний. */
+.infinite-line {
+  position: relative;
+  z-index: 1;
+  /* Перекриває порожню смугу під основою рельєфу hero. */
+  margin-top: calc(-6svh - 2px);
+  overflow: hidden;
+  background: #1b1b1b;
+}
+.infinite-line__viewport {
+  min-height: 76px;
+  overflow: hidden;
+}
+.infinite-line__track {
+  display: flex;
+  width: max-content;
+  animation: infinite-line-scroll 38s linear infinite;
+  will-change: transform;
+}
+.infinite-line__panel {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 76px;
+  white-space: nowrap;
+  color: #adff00;
+  font-size: clamp(15px, 1.4vw, 20px);
+  font-weight: 600;
+  letter-spacing: -.015em;
+  text-shadow: 0 0 18px rgba(173, 255, 0, .24);
+}
+.infinite-line__panel span {
+  padding-inline: 2rem;
+  color: #d9ff91;
+}
+@keyframes infinite-line-scroll {
+  to { transform: translateX(-50%); }
+}
+

@@ -1,0 +1,13 @@
+/* Плаваючі контакти: кнопка й меню */
+.social-float { position: fixed; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); z-index: 40; }
+.social-float__toggle { display: grid; place-items: center; width: 48px; height: 48px; padding: 12px; border: 1px solid #526344; border-radius: 50%; background: #182016; color: #ADFF00; cursor: pointer; box-shadow: 0 4px 18px #0006; transition: background .2s; }
+.social-float__toggle svg { width: 24px; height: 24px; }
+.social-float__toggle:hover { background: #26341e; }
+.social-float__toggle:focus-visible, .social-float__panel a:focus-visible { outline: 2px solid #ADFF00; outline-offset: 3px; }
+.social-float__panel { position: absolute; right: 0; bottom: 60px; width: 168px; padding: 8px; border: 1px solid #414c3f; border-radius: 12px; background: #141a14; box-shadow: 0 8px 30px #0008; }
+.social-float__panel[hidden] { display: none; }
+.social-float__panel button, .social-float__panel a { display: block; width: 100%; padding: 12px; border: 0; border-radius: 6px; background: transparent; color: #c2cbc0; text-align: left; font: inherit; font-size: 14px; text-decoration: none; }
+.social-float__panel button:disabled { opacity: .55; }
+.social-float__panel a:hover { background: #26341e; color: #ADFF00; }
+@media (max-width: 680px) { .footer { padding-bottom: 84px; } }
+

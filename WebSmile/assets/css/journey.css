@@ -1,0 +1,18 @@
+/* Про нас: анімовані шляхи З нами / Без нас */
+.journey { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin-top: 48px; text-align: left; }
+.journey__card { min-width: 0; padding: 28px; border: 1px solid #414c3f; border-radius: 12px; background-color: rgba(16,21,16,.8); background-image: linear-gradient(#71968412 1px,transparent 1px),linear-gradient(90deg,#71968412 1px,transparent 1px); background-size: 32px 32px; }
+.journey__title { margin: 0 0 10px; color: #fff; font-size: 24px; }
+.journey__card--clear .journey__title { color: #ADFF00; }
+.journey__caption { margin: 0; color: #b9beb8; font-size: 16px; line-height: 1.5; }
+.journey__visual { display: block; width: 100%; height: auto; margin-top: 16px; }
+.journey__track { fill: none; stroke: #ADFF0033; stroke-width: 3; }
+.journey__progress { fill: none; stroke: #ADFF00; stroke-width: 3; stroke-dasharray: 340; animation: journey-forward 4s ease-in-out infinite; }
+.journey__tangle { fill: none; stroke: #778477; stroke-width: 2; opacity: .5; }
+.journey__lost { fill: none; stroke: #aab5a6; stroke-width: 3; stroke-dasharray: 7 93; stroke-linecap: round; animation: journey-lost 5s ease-in-out infinite alternate; }
+@keyframes journey-forward { 0% { stroke-dashoffset: 340; } 75%,100% { stroke-dashoffset: 0; } }
+@keyframes journey-lost { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -93; } }
+@media (max-width: 680px) { .journey { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .journey__progress,.journey__lost { animation: none; stroke-dasharray: none; } }
+
+/* Keep the illustration inside its card at all widths. */
+.journey__visual { overflow: hidden; aspect-ratio: 2 / 1; }

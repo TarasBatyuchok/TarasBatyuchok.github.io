@@ -1,0 +1,50 @@
+/* 10. Текст під третьою хвилею м'яко з'являється під час прокручування. */
+.about {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-height: 65svh;
+  padding: clamp(80px, 12vw, 170px) 24px;
+  /* Прозорість відкриває спільну сітку та її рухомий квадрат. */
+  background: rgba(0, 0, 0, .14);
+  text-align: center;
+}
+.about__container {
+  width: min(900px, 100%);
+  padding: clamp(32px, 5vw, 64px);
+  border: 1px solid rgba(119, 153, 110, .36);
+  border-radius: 12px;
+  background: rgba(18, 23, 18, .58);
+}
+.about__eyebrow {
+  margin: 0 0 20px;
+  color: #d2f2a9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+.about__title {
+  margin: 0 auto 28px;
+  color: #f7f8f3;
+  font-size: clamp(32px, 4.5vw, 64px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+.about__description {
+  max-width: 740px;
+  margin: 0 auto;
+  color: #b5bbb5;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.7;
+}
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 900ms ease, transform 900ms cubic-bezier(.2, .7, .2, 1);
+}
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+

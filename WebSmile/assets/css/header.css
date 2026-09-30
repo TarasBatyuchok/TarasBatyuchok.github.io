@@ -1,0 +1,123 @@
+/* 2. Шапка та навігація. Пункти меню лежать у списку ul > li > a. */
+.header {
+  position: fixed;
+  z-index: 20;
+  inset: 0 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(8, 11, 9, .78);
+  backdrop-filter: blur(16px);
+  animation: reveal-down .8s both;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.1vw, 18px);
+  width: min(1360px, calc(100% - 48px));
+  height: 76px;
+  margin: auto;
+}
+.header__brand {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -.035em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.header__brand-mark {
+  display: block;
+  width: 34px;
+  height: 34px;
+  flex: none;
+}
+.header__nav {
+  flex: none;
+  margin-left: auto;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, .07);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .035);
+}
+.header__nav-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header__nav-link {
+  display: block;
+  padding: 10px 9px;
+  border-radius: 5px;
+  color: #aaaead;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color .25s, background .25s;
+}
+.header__nav-link:hover,
+.header__nav-link:focus-visible,
+.header__nav-link[aria-current="location"] {
+  color: #fff;
+  background: rgba(255, 255, 255, .08);
+}
+.header__menu-toggle { display: none; }
+.header .header__mobile-contact { display: none; }
+.header__languages {
+  display: flex;
+  flex: none;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid rgba(173, 255, 0, .22);
+  border-radius: 6px;
+  background: rgba(17, 23, 18, .8);
+}
+.header .header__contact { flex: none; min-height: 42px; padding-inline: 16px; white-space: nowrap; }
+.header__language {
+  display: inline-grid;
+  place-items: center;
+  min-width: 34px;
+  min-height: 34px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #9ba999;
+  font: 650 12px/1 Inter, system-ui, sans-serif;
+  cursor: pointer;
+}
+.header__language[aria-pressed="true"],
+.header__language:hover, .header__language:focus-visible {
+  background: rgba(173, 255, 0, .15);
+  color: #d6ff96;
+}
+.header__sound-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, .13);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .04);
+  color: #bfc8bd;
+  font: 500 13px/1 system-ui, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color .25s, border-color .25s;
+}
+.header__sound-toggle:hover,
+.header__sound-toggle:focus-visible,
+.header__sound-toggle[aria-pressed="true"] {
+  color: #d7ff86;
+  border-color: rgba(173, 255, 0, .55);
+}
+.header__sound-icon { font-size: 18px; line-height: 1; }
+

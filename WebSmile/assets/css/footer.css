@@ -1,0 +1,19 @@
+/* Футер: навігація, адреса, соціальні іконки */
+.footer { position: relative; z-index: 1; width: min(1360px, calc(100% - 48px)); margin: auto; padding: 64px 0 24px; border-top: 1px solid rgba(173,255,0,.25); }
+.footer__grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; }
+.footer__brand { font-size: 24px; }
+.footer__socials { display: flex; gap: 12px; margin-top: 24px; }
+.footer__social { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid #414c3f; border-radius: 8px; color: #c2cbc0; transition: color .25s, transform .25s; }
+.footer__social:hover { color: #ADFF00; transform: translateY(-3px); }
+.footer__social svg { width: 22px; height: 22px; }
+.footer__nav { display: grid; gap: 16px; align-content: start; }
+.footer__nav a { color: #c2cbc0; text-decoration: none; font-size: 16px; }
+.footer__nav a:hover { color: #ADFF00; }
+.footer__address-label { margin: 0 0 16px; color: #fff; font-size: 16px; }
+.footer__address { color: #c2cbc0; font-style: normal; line-height: 1.7; overflow-wrap: anywhere; }
+.footer__copyright { margin: 48px 0 0; color: #929c90; font-size: 14px; }
+@media (max-width: 680px) { .footer__grid { grid-template-columns: 1fr; gap: 32px; } }
+@media (prefers-reduced-motion: reduce) { .footer__social { transition: none; } .footer__social:hover { transform: none; } }
+
+.footer { opacity: 1; transform: none; }
+

@@ -1,0 +1,30 @@
+/* 3. Спільний стиль посилань-кнопок; модифікатор додає акцентний колір. */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 23px;
+  border: 1px solid rgba(255, 255, 255, .13);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .055);
+  color: #f8faf4;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .3s, background .3s, border-color .3s;
+}
+.button:hover, .button:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, .12);
+}
+.button--accent {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #101704;
+}
+.button--accent:hover, .button--accent:focus-visible {
+  border-color: #c6ff4d;
+  background: #c6ff4d;
+}
+

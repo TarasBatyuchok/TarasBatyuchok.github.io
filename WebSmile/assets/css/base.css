@@ -1,0 +1,25 @@
+/* 1. Кольори та базові правила сторінки. */
+:root {
+  --accent: #adff00;
+  --text: #f5f7f2;
+  --muted: #a9ada9;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; min-height: 100%; background: #000; }
+body { color: var(--text); font-family: Inter, Arial, system-ui, sans-serif; }
+canvas { display: block; width: 100%; height: 100%; touch-action: pan-y; }
+
+/* Заголовок секції доступний читачам екрана, але не змінює макет. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

@@ -1,0 +1,49 @@
+/* 9. Третя секція: чотири переваги з тонкими лініями між картками. */
+.benefits {
+  display: grid;
+  align-items: center;
+  /* Сітка з grid.js залишається видимою під секцією та реагує на курсор. */
+  background: rgba(0, 0, 0, .14);
+}
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(1360px, 100%);
+  margin: 0 auto;
+}
+.benefits__card {
+  min-height: 290px;
+  padding: clamp(32px, 4vw, 64px);
+  border: 1px solid rgba(255, 255, 255, .055);
+  background: rgba(23, 23, 23, .54);
+}
+.benefits__heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.benefits__icon {
+  display: grid;
+  flex: 0 0 52px;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: #232823;
+}
+.benefits__icon img { width: 25px; height: 25px; }
+.benefits__title {
+  margin: 0;
+  color: #f3f4f1;
+  font-size: clamp(19px, 1.7vw, 24px);
+  font-weight: 600;
+}
+.benefits__description {
+  max-width: 550px;
+  margin: 0;
+  color: #b6b8b6;
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: 1.65;
+}
+

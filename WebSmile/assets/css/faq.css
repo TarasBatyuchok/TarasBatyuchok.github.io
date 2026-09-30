@@ -1,0 +1,37 @@
+/* 11. FAQ: хвиля повторює перемички, а питання утворюють дві незалежні колонки. */
+.bridge--faq { background: #101310; }
+.bridge--faq .bridge__content {
+  right: auto;
+  left: 50%;
+  width: calc(100% - 32px);
+  max-width: 900px;
+  transform: translate(-50%, -42%);
+  text-align: center;
+}
+.bridge--faq.bridge--visible .bridge__content { transform: translate(-50%, -50%); }
+.bridge--faq .bridge__title { margin: 0; font-size: clamp(28px, 3vw, 42px); }
+.bridge__subtitle { margin: 8px 0 0; color: #d5d9d2; font-size: 14px; line-height: 1.5; }
+.faq {
+  position: relative;
+  z-index: 1;
+  padding: clamp(56px, 7vw, 96px) clamp(18px, 4vw, 56px);
+  /* Спільна сітка і квадрат за курсором видно крізь поверхні FAQ. */
+  background: rgba(0, 0, 0, .08);
+}
+.faq__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: min(1280px, 100%); margin: auto; overflow: hidden; border: 1px solid rgba(119, 153, 110, .36); border-radius: 12px; }
+.faq__column + .faq__column { border-left: 1px solid #292c29; }
+.faq__item { border-bottom: 1px solid #292c29; background: rgba(23, 25, 23, .30); }
+.faq__item[open] { background: rgba(23, 29, 23, .42); }
+.faq__question { display: flex; align-items: center; gap: 18px; min-height: 83px; padding: 18px 30px; cursor: pointer; list-style: none; }
+.faq__question::-webkit-details-marker { display: none; }
+.faq__question:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+.faq__number { display: grid; flex: 0 0 48px; place-items: center; height: 48px; border: 1px solid #292c29; border-radius: 7px; background: #202220; color: #f7f8f5; font-size: 17px; font-weight: 650; }
+.faq__label { flex: 1; color: #f5f6f2; font-size: 15px; font-weight: 550; line-height: 1.5; transition: color .25s; }
+.faq__indicator { position: relative; flex: 0 0 18px; height: 18px; color: #f5f6f2; }
+.faq__indicator::before, .faq__indicator::after { content: ''; position: absolute; top: 8px; left: 3px; width: 12px; height: 2px; background: currentColor; transition: transform .25s; }
+.faq__indicator::after { transform: rotate(90deg); }
+.faq__item[open] .faq__indicator::after { transform: rotate(0); }
+.faq__item[open] .faq__label, .faq__item[open] .faq__number, .faq__item[open] .faq__indicator { color: var(--accent); }
+.faq__answer { overflow: hidden; padding: 0 66px 20px 96px; color: #b9beb8; font-size: 14px; line-height: 1.65; }
+.faq__answer p { margin: 0; }
+

@@ -1,0 +1,18 @@
+/* 14. Системне налаштування зменшення руху. */
+@media (prefers-reduced-motion: reduce) {
+  .header, .hero__title, .hero__description, .hero__actions { animation: none; }
+  .infinite-line__track { animation: none; }
+  .button, .header__nav-link, .header__sound-toggle, .services__link, .packages__link,
+  .bridge__canvas, .bridge__content, [data-reveal] { transition: none; }
+  [data-reveal] { opacity: 1; transform: none; }
+}
+
+
+
+
+
+.package-size { font-size: 24px; font-weight: 700; color: var(--accent); border: 1px solid rgba(119,153,110,.4); border-radius: 10px; }
+.services__step-label, .packages__step-label { font-size: 14px; letter-spacing: .04em; }
+
+
+

@@ -1,0 +1,75 @@
+/* 13. Мобільне меню та компактніший вміст. */
+@media (max-width: 1050px) {
+  .header__inner { width: calc(100% - 32px); height: 64px; gap: 12px; }
+  .header__menu-toggle {
+    display: inline-flex;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 6px;
+    background: #111713;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .header__languages { order: 1; margin-left: auto; }
+  .header__sound-toggle { order: 2; min-width: 44px; }
+  .header__menu-toggle { order: 3; }
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 16px;
+    right: 16px;
+    padding: 8px;
+    background: #101611;
+    border-color: rgba(173, 255, 0, .2);
+  }
+  .header__nav-list { flex-direction: column; align-items: stretch; }
+  .header__menu-toggle[aria-expanded="true"] + .header__nav { display: block; }
+  .header__nav-link { padding: 13px 16px; }
+  .header .header__mobile-contact { display: inline-flex; min-height: 42px; margin: 8px 4px 4px; padding-inline: 16px; }
+  .header .header__contact { display: none; }
+}
+
+@media (max-width: 920px) {
+  .hero__content { padding-top: clamp(136px, 18vh, 190px); }
+  .hero__title { font-size: clamp(38px, 9vw, 56px); }
+  .hero__description { margin-top: 22px; font-size: 14px; }
+  .hero__tag { white-space: normal; }
+  .hero__actions { margin-top: 24px; }
+  .bridge__content, .bridge--reverse .bridge__content {
+    right: 20px;
+    left: 20px;
+    max-width: none;
+    text-align: center;
+  }
+  .bridge--third .bridge__content { right: auto; left: 50%; }
+  .bridge__title { font-size: clamp(24px, 6vw, 32px); }
+  .services__container { width: calc(100% - 36px); }
+  .services__grid { grid-template-columns: 1fr; }
+  .services__card { min-height: 320px; padding: 30px 24px; }
+  .services__step { margin-bottom: 24px; }
+  .services__icon { margin-bottom: 24px; }
+  .benefits { min-height: auto; }
+  .benefits__grid { grid-template-columns: 1fr; }
+  .benefits__card { min-height: auto; padding: 32px 24px; }
+  .benefits__heading { margin-bottom: 20px; }
+  .faq__grid { grid-template-columns: 1fr; }
+  .faq__column + .faq__column { border-left: 0; }
+  .faq__question { gap: 13px; padding: 16px; }
+  .faq__answer { padding: 0 50px 18px 77px; }
+  .contact__fields, .contact__options { grid-template-columns: 1fr; }
+  .contact { padding-inline: 16px; }
+}
+@media (max-width: 390px) {
+  .header__inner { gap: 7px; }
+  .header__brand { font-size: 14px; }
+  .header__languages { gap: 0; padding: 2px; }
+  .header__language { min-width: 28px; min-height: 32px; font-size: 11px; }
+  .header__sound-toggle, .header__menu-toggle { min-width: 40px; width: 40px; padding-inline: 0; }
+}
+

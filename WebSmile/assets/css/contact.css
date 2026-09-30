@@ -1,0 +1,76 @@
+/* 12. Контакт: фінальна хвиля та форма з виразними станами полів. */
+.bridge--contact { height: clamp(260px, 28vw, 370px); background: #101310; }
+.bridge--contact .bridge__content {
+  right: auto;
+  left: 50%;
+  width: calc(100% - 32px);
+  max-width: 900px;
+  transform: translate(-50%, -42%);
+  text-align: center;
+}
+.bridge--contact.bridge--visible .bridge__content { transform: translate(-50%, -50%); }
+.bridge__brand-mark { display: grid; place-items: center; width: 48px; height: 48px; margin: 0 auto 24px; border-radius: 8px; box-shadow: 0 0 28px rgba(173, 255, 0, .23); }
+.bridge__brand-mark img { width: 48px; height: 48px; }
+.bridge--contact .bridge__title { margin: 0; font-size: clamp(23px, 2.5vw, 34px); }
+.bridge--contact .bridge__subtitle { max-width: 590px; margin: 10px auto 0; }
+.bridge__action { margin-top: 23px; text-shadow: none; }
+/* Прозорий фон показує ту саму фіксовану сітку й курсорний квадрат із grid.js. */
+.contact { position: relative; z-index: 1; padding: clamp(64px, 8vw, 112px) 24px 120px; background: rgba(0, 0, 0, .14); }
+.contact__intro { max-width: 760px; margin: 0 auto 42px; text-align: center; }
+.contact__eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.contact__title { margin: 0; font-size: clamp(32px, 4vw, 54px); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; }
+.contact__description { margin: 16px auto 0; color: #b9bfb8; font-size: 16px; line-height: 1.6; }
+.contact__form { width: min(900px, 100%); margin: auto; padding: clamp(22px, 5vw, 56px); border: 1px solid rgba(119, 153, 110, .36); border-radius: 12px; background: rgba(18, 23, 18, .58); }
+.contact__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.contact__field { min-width: 0; }
+.contact__field--phone { grid-column: 1 / -1; }
+.contact__label { display: block; margin-bottom: 10px; color: #f1f5ed; font-size: 15px; font-weight: 600; }
+.contact__label > span:not(.contact__optional) { color: var(--accent); }
+.contact__optional { color: #a9b1a6; font-size: 13px; font-weight: 400; }
+.contact__input { display: block; width: 100%; min-height: 50px; padding: 12px 14px; border: 1px solid #414c3f; border-radius: 6px; outline: none; background: #101510; color: #fff; font: inherit; font-size: 16px; transition: border-color .25s, box-shadow .25s; }
+.contact__input::placeholder { color: #929c90; }
+.contact__input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(173, 255, 0, .13); }
+.contact__input[aria-invalid="true"], .contact__services[aria-invalid="true"] { border-color: #ff958d; }
+.contact__error { display: block; min-height: 18px; margin-top: 5px; color: #ffaaa3; font-size: 13px; line-height: 1.4; }
+.contact__services { min-width: 0; margin: 20px 0 0; padding: 24px; border: 1px solid #303630; border-radius: 7px; background: rgba(27, 30, 27, .78); }
+.contact__services .contact__label { margin: 0 0 18px; }
+.contact__options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; row-gap: 18px; }
+.contact__option { display: inline-flex; align-items: center; gap: 12px; min-height: 28px; color: #e5eae2; font-size: 15px; cursor: pointer; }
+.contact__option input { display: grid; flex: 0 0 22px; place-items: center; width: 22px; height: 22px; margin: 0; appearance: none; border: 1px solid #343a34; border-radius: 4px; background: #282b28; cursor: pointer; transition: border-color .2s, background .2s; }
+.contact__option input::after { content: ''; width: 10px; height: 6px; border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: translateY(-1px) rotate(-45deg) scale(0); transition: transform .2s; }
+.contact__option input:checked { border-color: #465642; background: #272e24; }
+.contact__option input:checked::after { transform: translateY(-1px) rotate(-45deg) scale(1); }
+.contact__option input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.contact__field--message { margin-top: 20px; }
+.contact__textarea { min-height: 132px; resize: vertical; }
+.contact__submit { margin-top: 24px; cursor: pointer; }
+.contact__status { min-height: 1.5em; margin: 14px 0 0; color: #d5efb7; font-size: 14px; line-height: 1.5; }
+
+/* Consent and editable privacy policy. */
+.contact__consent-field { margin-top: 24px; }
+.contact__consent { display: flex; align-items: flex-start; gap: 12px; color: #c2cbc0; font-size: 14px; line-height: 1.6; cursor: pointer; }
+.contact__consent input { appearance: none; flex: none; width: 20px; height: 20px; margin: 2px 0 0; border: 1px solid #737373; border-radius: 4px; background: #292929; cursor: pointer; display: grid; place-content: center; }
+.contact__consent input::after { content: ''; width: 9px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) scale(0); }
+.contact__consent input:checked { background: #666; border-color: #999; }
+.contact__consent input:checked::after { transform: rotate(-45deg) scale(1); }
+.contact__consent input:focus-visible { outline: 2px solid #ddd; outline-offset: 3px; }
+.contact__privacy-link { color: #d2f2a9; text-underline-offset: 3px; }
+.privacy { position: relative; z-index: 1; width: min(920px, calc(100% - 40px)); margin: auto; padding: 140px 0 100px; }
+.privacy__title { margin: 0 0 28px; font-size: clamp(36px, 5vw, 64px); letter-spacing: -.04em; }
+.privacy__notice { padding: 20px; border: 1px solid #435039; border-radius: 8px; background: #141b12; color: #d2f2a9; line-height: 1.6; }
+.privacy__updated { color: #aeb7ac; }
+.privacy__section { padding: 28px 0; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.privacy__section h2 { font-size: clamp(23px, 3vw, 30px); }
+.privacy__section p { color: #c2cbc0; font-size: 16px; line-height: 1.8; }
+.privacy mark { background: rgba(173, 255, 0, .09); color: #d2f2a9; overflow-wrap: anywhere; }
+.privacy > .button { margin-top: 36px; }
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(22px); filter: blur(5px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@keyframes reveal-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

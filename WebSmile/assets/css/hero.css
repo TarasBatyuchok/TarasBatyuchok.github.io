@@ -1,0 +1,68 @@
+/* 5. Hero: canvas під текстом, затемнення над canvas, текст поверх обох. */
+.section--hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(#000 0%, rgba(0,0,0,.3) 35%, transparent 68%, #000 100%);
+}
+.section--hero .section__number {
+  top: auto;
+  right: 24px;
+  bottom: calc(6svh + 20px);
+  left: auto;
+}
+.hero__terrain { position: absolute; inset: 0; }
+.hero__content {
+  position: relative;
+  z-index: 3;
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  padding-top: clamp(150px, 19vh, 230px);
+  text-align: center;
+  pointer-events: none;
+}
+.hero__content > * { pointer-events: auto; }
+.hero__title {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #f7f8f3;
+  font-size: clamp(42px, 5.1vw, 76px);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -.055em;
+  text-wrap: balance;
+  animation: reveal-up 1s .18s both;
+}
+.hero__description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  max-width: 900px;
+  margin: 28px auto 0;
+  color: #9da99b;
+  font: 500 clamp(14px, 1.2vw, 17px)/1.4 Inter, system-ui, sans-serif;
+  animation: reveal-up 1s .36s both;
+}
+.hero__for { margin-right: 2px; }
+.hero__tag {
+  padding: 7px 11px;
+  border: 1px solid rgba(173, 255, 0, .18);
+  border-radius: 5px;
+  background: rgba(26, 33, 26, .82);
+  color: #c7f68c;
+  white-space: nowrap;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .05);
+}
+.hero__separator { color: #758a70; }
+.hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+  animation: reveal-up 1s .55s both;
+}
+
